@@ -1,0 +1,5 @@
+家具ID,家具名称,切石机原材料,自由放置?,自由旋转?,碰撞体积-长,宽,高,椅子?,晃动?,转换到家具ID
+oak_chair_1,橡木扶手椅,oak_log,,1,0,0,0,1,,
+oak_stair_arm_left,左橡木楼梯扶手,oak_log,,,0,0,0,,,oak_stair_arm_right
+oak_stair_arm_right,右橡木楼梯扶手,oak_log,,,0,0,0,,,oak_stair_arm_double
+oak_stair_arm_double,双橡木楼梯扶手,oak_log,,,0,0,0,,,oak_stair_arm_left
