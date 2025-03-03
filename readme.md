@@ -23,3 +23,41 @@ Minecraft Java 1.21.4+
 - 多家具包支持
     - 完全抛弃数字id，使用自定义的名称作为家具id
     - 家具id与模型名称相同
+
+## 储存架构(nbt format)
+
+pinecone:fur_data:{
+    fur_id:{
+        transfer_to:"target_fur_id"
+        placement:{
+            align_block:1b,
+            arb_rotation:1b,
+            total_offset:[0.0f,0.0f,0.0f]
+            bounding_box:[1.0f,0.5f]
+            barrier:[
+                [0,0,0],
+                [0,1,0]
+            ],
+            item_data:{
+                id:"minecraft:firework_star",
+                count:1,
+                components:{
+                    item_model:"fur_id"
+                }
+            }
+        },
+        interaction:{
+            is_seat:1b,
+            seat_height:0.5f
+            is_shake:1b
+        },
+        auto:{
+            rotation_left:1b,
+            rotation_right:1b
+        }
+    },
+    fur_id_2:{
+        ...
+    },
+    ...
+}
