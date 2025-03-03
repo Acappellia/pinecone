@@ -12,6 +12,7 @@ Minecraft Java 1.21.4+
     - 染色
     - 自由放置，自由旋转；或对齐方块坐标，四向旋转
     - 支持多方块的碰撞体积
+    - 支持不同亮度的光源
     - 椅子能做
     - 小家具能晃动
     - 支持家具间的模型转换
@@ -21,23 +22,28 @@ Minecraft Java 1.21.4+
     - 获取家具
     - 获取工具/刷子
 - 多家具包支持
-    - 完全抛弃数字id，使用自定义的名称作为家具id
-    - 家具id与模型名称相同
+    - 完全抛弃数字id，使用模型的名称作为家具id
 
 ## 储存架构(nbt format)
 
+```
 pinecone:fur_data:{
     fur_id:{
         transfer_to:"target_fur_id"
         placement:{
             align_block:1b,
             arb_rotation:1b,
-            total_offset:[0.0f,0.0f,0.0f]
             bounding_box:[1.0f,0.5f]
             barrier:[
                 [0,0,0],
                 [0,1,0]
             ],
+            light:[
+                {
+                    pos:[0,2,0],
+                    light:15
+                }
+            ]
             item_data:{
                 id:"minecraft:firework_star",
                 count:1,
@@ -61,3 +67,69 @@ pinecone:fur_data:{
     },
     ...
 }
+```
+
+## 主要逻辑(pseudocode)
+
+```
+void place_furniture :{
+    get fur_id;
+    get properties from storage;
+    ray_cast;
+    move_pos to target;
+    if align_block:{
+        align to block;
+        if has_barrier || has_light:{
+            for block in barrier_list:{
+                move_pos to block;
+                if block isnot replaceable:{
+                    return fail;
+                }
+            }
+            for block in light_list:{
+                move_pos to block;
+                if block isnot replaceable:{
+                    return fail;
+                }
+            }
+            for block in barrier_list:{
+                if block is water:{
+                    place waterlogged barrier;
+                }
+                else:{
+                    place barrier;
+                }
+            }
+            for block in light_list:{
+                if block is water:{
+                    place waterlogged light;
+                }
+                else:{
+                    place light;
+                }
+            }
+        }
+        place_furniture;
+    }
+    else:{
+        place_furniture;
+    }
+}
+```
+
+```
+void place_furniture:{
+    summon interaction with width and height;
+    if has_interaction:{
+        tag interaction add interact;
+    }
+    if has_auto:{
+        tag interaction add auto;
+    }
+    summon item_display;
+    init transformation;
+    copy item_data to item_display;
+    copy dye_color to item_display;
+    ride item_display on interaction;
+}
+```

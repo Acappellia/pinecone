@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "#pinecone:air_blocks_replace",
+        "#pinecone:waterloggable_blocks_replace",
+        "#pinecone:water_blocks_replace"
+    ]
+}
