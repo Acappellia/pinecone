@@ -33,6 +33,7 @@ pinecone:fur_data:{
         placement:{
             align_block:1b,
             arb_rotation:1b,
+            offset:[0.0,0.0,0.0]
             bounding_box:[1.0f,0.5f]
             barrier:[
                 [0,0,0],
@@ -41,7 +42,7 @@ pinecone:fur_data:{
             light:[
                 {
                     pos:[0,2,0],
-                    light:15
+                    level:15
                 }
             ]
             item_data:{
@@ -54,12 +55,12 @@ pinecone:fur_data:{
         },
         interaction:{
             is_seat:1b,
-            seat_height:0.5f
+            seat_height:0.5
             is_shake:1b
         },
         auto:{
-            rotation_left:1b,
-            rotation_right:1b
+            rotate_left:1b,
+            rotate_right:1b
         }
     },
     fur_id_2:{
@@ -79,32 +80,17 @@ void place_furniture :{
     move_pos to target;
     if align_block:{
         align to block;
+        apply offset;
         if has_barrier || has_light:{
             for block in barrier_list:{
                 move_pos to block;
-                if block isnot replaceable:{
-                    return fail;
-                }
-            }
-            for block in light_list:{
-                move_pos to block;
-                if block isnot replaceable:{
-                    return fail;
-                }
-            }
-            for block in barrier_list:{
-                if block is water:{
-                    place waterlogged barrier;
-                }
-                else:{
+                if block is replaceable:{
                     place barrier;
                 }
             }
             for block in light_list:{
-                if block is water:{
-                    place waterlogged light;
-                }
-                else:{
+                move_pos to block;
+                if block is replaceable:{
                     place light;
                 }
             }
@@ -119,6 +105,7 @@ void place_furniture :{
 
 ```
 void place_furniture:{
+    check player rotation, copy to storage;
     summon interaction with width and height;
     if has_interaction:{
         tag interaction add interact;
@@ -133,3 +120,22 @@ void place_furniture:{
     ride item_display on interaction;
 }
 ```
+
+```
+void remove_furniture:{
+    
+}
+```
+
+
+## Tag
+
+家具intearction pinecone_fur
+家具item_display pinecone_display
+家具base pinecone_base
+
+interaction-座椅 pinecone_seat
+interaction-晃动 pinecone_shake
+
+item_display-左转动 pinecone_rotate_left
+item_display-右转动 pinecone_rotate_right

@@ -1,0 +1,1 @@
+$execute positioned ^$(barrier_offsetX) ^$(barrier_offsetY) ^$(barrier_offsetZ) run function pinecone:private/place/barrier/place

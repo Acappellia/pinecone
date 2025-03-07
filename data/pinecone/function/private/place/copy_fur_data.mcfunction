@@ -1,0 +1,1 @@
+$data modify storage pinecone:tmp place_fur_data set from storage pinecone:fur_data $(id)

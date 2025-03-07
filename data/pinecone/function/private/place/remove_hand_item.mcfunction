@@ -1,0 +1,1 @@
+$item modify entity @s weapon.$(hand) pinecone:remove_1

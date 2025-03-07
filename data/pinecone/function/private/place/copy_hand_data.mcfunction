@@ -1,0 +1,1 @@
+$data modify storage pinecone:tmp hand_item set from storage pinecone:tmp $(hand)

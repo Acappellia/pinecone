@@ -1,0 +1,11 @@
+#get rotation
+function pinecone:private/place/get_rotation
+
+#summon interaction & item_display
+
+execute summon item_display run function pinecone:private/place/summon/item_display_base
+execute summon interaction run function pinecone:private/place/summon/interaction
+execute summon item_display run function pinecone:private/place/summon/item_display
+
+#remove hand item
+function pinecone:private/place/remove_hand_item with storage pinecone:tmp place_info

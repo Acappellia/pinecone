@@ -1,0 +1,1 @@
+$execute align xyz positioned ~0.5 ~ ~0.5 rotated $(rotation) 0 positioned ^$(offsetX) ^$(offsetY) ^$(offsetZ) run function pinecone:private/place/check_block

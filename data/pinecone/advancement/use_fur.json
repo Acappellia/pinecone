@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "using_item": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{pinecone_fur:1b}"
+                    }
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "gamemode": [
+                            "creative",
+                            "survival"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pinecone:private/place/use_fur"
+    }
+}
