@@ -6,7 +6,7 @@ execute if predicate pinecone:is_sneaking if predicate pinecone:is_holding_furni
 
 ##interact
 #tag @s add fur_user
-execute as @e[distance=..5,type=interaction,tag=interact_target,tag=pinecone_fur,limit=1] at @s positioned ~ ~0.1 ~ run function pinecone:private/interact/use
+execute as @e[distance=..5,type=interaction,tag=interact_target,tag=pinecone_fur,limit=1] at @s run function pinecone:private/interact/use
 #tag @s remove fur_user
 
 #add cd

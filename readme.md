@@ -123,7 +123,24 @@ void place_furniture:{
 
 ```
 void remove_furniture:{
-    
+    get fur_id;
+    get properties from storage;
+    if has_barrier || has_light:{
+        for block in barrier_list:{
+            move_pos to block;
+            if block is replaceable:{
+                remove barrier;
+            }
+        }
+        for block in light_list:{
+            move_pos to block;
+            if block is replaceable:{
+                remove light;
+            }
+        }
+    }
+    summon item;
+    kill entities;
 }
 ```
 

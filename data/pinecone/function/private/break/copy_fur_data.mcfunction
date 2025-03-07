@@ -1,0 +1,1 @@
+$data modify storage pinecone:tmp remove_fur_data set from storage pinecone:fur_data $(id)

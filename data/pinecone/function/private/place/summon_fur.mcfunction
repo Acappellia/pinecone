@@ -1,8 +1,10 @@
+#play sound
+playsound block.stone.place block @a ~ ~ ~ 1 1
+
 #get rotation
 function pinecone:private/place/get_rotation
 
 #summon interaction & item_display
-
 execute summon item_display run function pinecone:private/place/summon/item_display_base
 execute summon interaction run function pinecone:private/place/summon/interaction
 execute summon item_display run function pinecone:private/place/summon/item_display
