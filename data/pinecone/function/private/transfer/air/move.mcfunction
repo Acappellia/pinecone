@@ -1,0 +1,1 @@
+$execute positioned ^$(air_offsetX) ^$(air_offsetY) ^$(air_offsetZ) run function pinecone:private/tranfer/air/place

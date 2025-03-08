@@ -29,12 +29,15 @@ Minecraft Java 1.21.4+
 ```
 pinecone:fur_data:{
     fur_id:{
-        transfer_to:"target_fur_id"
+        transfer:{
+            target:"target_id",
+            require_tool:1b
+        },
         placement:{
             align_block:1b,
             arb_rotation:1b,
-            offset:[0.0,0.0,0.0]
-            bounding_box:[1.0f,0.5f]
+            offset:[0.0,0.0,0.0],
+            bounding_box:[1.0f,0.5f],
             barrier:[
                 [0,0,0],
                 [0,1,0]
@@ -44,9 +47,12 @@ pinecone:fur_data:{
                     pos:[0,2,0],
                     level:15
                 }
+            ],
+            air:[
+                [0,3,0]
             ]
             item_data:{
-                id:"minecraft:firework_star",
+                id:"minecraft:leather_horse_armor",
                 count:1,
                 components:{
                     item_model:"fur_id"
@@ -55,7 +61,7 @@ pinecone:fur_data:{
         },
         interaction:{
             is_seat:1b,
-            seat_height:0.5
+            seat_height:0.5,
             is_shake:1b
         },
         auto:{
@@ -116,7 +122,7 @@ void place_furniture:{
     summon item_display;
     init transformation;
     copy item_data to item_display;
-    copy dye_color to item_display;
+    copy dyed_color to item_display;
     ride item_display on interaction;
 }
 ```
@@ -144,6 +150,17 @@ void remove_furniture:{
 }
 ```
 
+```
+void transfer_furniture:{
+    get fur_id;
+    get properties;
+    get transfer target id;
+    get target proterties;
+    update interaction tag;
+    update item_display model;
+    update blocks;
+}
+```
 
 ## Tag
 
@@ -153,6 +170,7 @@ void remove_furniture:{
 
 interaction-座椅 pinecone_seat
 interaction-晃动 pinecone_shake
+interaction-转换 pinecone_transfer
 
 item_display-左转动 pinecone_rotate_left
 item_display-右转动 pinecone_rotate_right

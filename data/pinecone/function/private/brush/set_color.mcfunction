@@ -1,0 +1,1 @@
+$function pinecone:private/brush/set_color/$(color)

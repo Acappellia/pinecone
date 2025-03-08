@@ -11,4 +11,6 @@ scoreboard players set #10000 pinecone 10000
 scoreboard objectives add pinecone_place_cd minecraft.custom:time_since_death
 scoreboard objectives add pinecone_seat_height_cm dummy
 
+function pinecone:debug_init_data
+
 schedule function pinecone:private/slowtick 20t replace

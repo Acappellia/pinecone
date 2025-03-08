@@ -17,6 +17,10 @@ function pinecone:private/place/copy_hand_data with storage pinecone:tmp place_i
 #copy furniture id
 data modify storage pinecone:tmp place_info.id set from storage pinecone:tmp hand_item.components."minecraft:item_model"
 
+#copy dyed color
+data remove storage pinecone:tmp dyed_color
+data modify storage pinecone:tmp dyed_color set from storage pinecone:tmp hand_item.components."minecraft:dyed_color"
+
 #copy furniture data
 function pinecone:private/place/copy_fur_data with storage pinecone:tmp place_info
 

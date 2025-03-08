@@ -1,0 +1,1 @@
+$execute positioned ^$(light_offsetX) ^$(light_offsetY) ^$(light_offsetZ) run function pinecone:private/transfer/light/place with storage pinecone:tmp transfer_info

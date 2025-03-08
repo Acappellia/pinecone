@@ -9,3 +9,6 @@ execute if data storage pinecone:tmp place_fur_data.placement.barrier[0] run fun
 
 #place light
 execute if data storage pinecone:tmp place_fur_data.placement.light[0] run function pinecone:private/place/light/loop
+
+#place air
+execute if data storage pinecone:tmp place_fur_data.placement.air[0] run function pinecone:private/place/air/loop

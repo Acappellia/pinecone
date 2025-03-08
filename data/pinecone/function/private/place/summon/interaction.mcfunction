@@ -8,8 +8,9 @@ execute store result score @s pinecone_seat_height_cm run data get storage pinec
 
 #tag
 tag @s add pinecone_fur
+execute if data storage pinecone:tmp place_fur_data.transfer.target run tag @s add pinecone_transfer
 execute if data storage pinecone:tmp place_fur_data.interaction{is_seat:1b} run tag @s add pinecone_seat
 execute if data storage pinecone:tmp place_fur_data.interaction{is_shake:1b} run tag @s add pinecone_shake
 
 #ride on base
-ride @s mount @n[distance=..0.1,tag=pinecone_fur_base,type=item_display]
+ride @s mount @n[distance=..0.1,tag=pinecone_fur_base_new,type=item_display]

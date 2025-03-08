@@ -1,0 +1,1 @@
+$data modify storage pinecone:tmp transfer_origin_fur_data set from storage pinecone:fur_data $(origin_id)

@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "using_item": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{pinecone_brush:1b}"
+                    }
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "predicates": {
+                                "custom_data": "{pinecone_brush:1b}"
+                            }
+                        }
+                    },
+                    "flags": {
+                        "is_sneaking": true
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pinecone:private/brush/use"
+    }
+}

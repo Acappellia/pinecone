@@ -1,0 +1,15 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand":{
+                "predicates": {
+                    "custom_data": {
+                        "pinecone_brush": 1
+                    }
+                }
+            }
+        }
+    }
+}
