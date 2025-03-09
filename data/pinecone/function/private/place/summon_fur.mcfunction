@@ -1,5 +1,5 @@
 #play sound
-playsound block.stone.place block @a ~ ~ ~ 1 1
+playsound block.chiseled_bookshelf.place block @a ~ ~ ~ 1 1
 
 #get rotation
 function pinecone:private/place/get_rotation

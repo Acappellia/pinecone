@@ -14,4 +14,4 @@ execute store result storage pinecone:tmp brush_info.color int 1 run scoreboard 
 function pinecone:private/brush/set_color with storage pinecone:tmp brush_info
 
 #playsound
-playsound block.copper_bulb.turn_on player @s ~ ~ ~ 1 1
+playsound block.copper_bulb.turn_on player @s ~ ~ ~ 1 1.2

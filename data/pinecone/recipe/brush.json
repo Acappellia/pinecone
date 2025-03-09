@@ -1,0 +1,68 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        [
+            "red_dye",
+            "blue_dye",
+            "cyan_dye",
+            "gray_dye",
+            "lime_dye",
+            "pink_dye",
+            "black_dye",
+            "brown_dye",
+            "green_dye",
+            "white_dye",
+            "orange_dye",
+            "purple_dye",
+            "yellow_dye",
+            "magenta_dye",
+            "light_blue_dye",
+            "light_gray_dye"
+        ],
+        "brush",
+        [
+            "honey_bottle",
+            "honeycomb",
+            "resin_clump",
+            "slime_ball",
+            "magma_cream",
+            "dragon_breath",
+            "milk_bucket",
+            "suspicious_stew",
+            "mushroom_stew",
+            "beetroot_soup",
+            "lava_bucket",
+            "potion",
+            "splash_potion",
+            "lingering_potion",
+            "ominous_bottle",
+            "experience_bottle"
+        ]
+    ],
+    "result": {
+        "id": "leather_horse_armor",
+        "count": 1,
+        "components": {
+            "item_name": "\"颜料刷\"",
+            "custom_data": {
+                "pinecone_brush": 1
+            },
+            "item_model": "minecraft:brush",
+            "consumable": {
+                "animation": "none",
+                "consume_seconds": 1000000,
+                "has_consume_particles": false
+            },
+            "attribute_modifiers": {
+                "modifiers": [],
+                "show_in_tooltip": false
+            },
+            "lore": [
+                "[{\"text\":\"手持时：\",\"color\":\"gray\",\"italic\":false}]",
+                "[{\"text\":\"[\",\"color\":\"gray\",\"italic\":false},{\"keybind\": \"key.sneak\",\"color\":\"white\",\"italic\":false},{\"text\":\"+\",\"color\":\"gray\",\"italic\":false},{\"keybind\": \"key.use\",\"color\":\"white\",\"italic\":false},{\"text\":\"] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"循环切换刷子颜色\",\"color\":\"white\",\"italic\":false}]",
+                "[{\"text\":\"[\",\"color\":\"gray\",\"italic\":false},{\"keybind\": \"key.use\",\"color\":\"white\",\"italic\":false},{\"text\":\"] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"对准家具并涂色\",\"color\":\"white\",\"italic\":false}]"
+            ]
+        }
+    },
+    "category": "misc"
+}

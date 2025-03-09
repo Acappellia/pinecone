@@ -1,5 +1,5 @@
 # set item
-data modify entity @s item set from storage pinecone:tmp place_fur_data.placement.item_data
+data modify entity @s item set from storage pinecone:tmp place_fur_data.item_data
 
 # set color
 execute if data storage pinecone:tmp dyed_color run data modify entity @s item.components."minecraft:dyed_color" set from storage pinecone:tmp dyed_color

@@ -1,0 +1,12 @@
+{
+    "criteria": {
+        "auto": {
+            "trigger": "location"
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "pinecone:brush"
+        ]
+    }
+}

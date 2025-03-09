@@ -9,9 +9,9 @@ function pinecone:private/transfer/copy_fur_data with storage pinecone:tmp trans
 
 #check tool
 scoreboard players set #check_tool pinecone 0
-execute if data storage pinecone:tmp transfer_origin_fur_data.tranfer{require_tool:1b} as @p[tag=fur_user,distance=..6] unless predicate pinecone:is_holding_tool run scoreboard players set #check_tool pinecone 1
+execute if data storage pinecone:tmp transfer_origin_fur_data.transfer{require_tool:1b} as @p[tag=fur_user,distance=..6] unless predicate pinecone:is_holding_tool run scoreboard players set #check_tool pinecone 1
 execute if score #check_tool pinecone matches 1 run return -1 
-#tellraw @s [{"text": "[","color": "white"},{"text": "Pinecone","color": "#22aaff"},{"text": "]","color": "white"},{"text": " 使用正确的工具切换家具","color": "gray"}]
+#tellraw @s [{"text": "> ","color": "#22aaff"},{"text": " 使用任意锄头切换家具","color": "gray"}]
 
 #copy target id
 data modify storage pinecone:tmp transfer_info.target_id set from storage pinecone:tmp transfer_origin_fur_data.transfer.target
@@ -32,5 +32,6 @@ execute if data storage pinecone:tmp transfer_target_fur_data.placement.light[0]
 #set air
 execute if data storage pinecone:tmp transfer_target_fur_data.placement.air[0] run function pinecone:private/transfer/air/loop
 
-#playsound
-playsound item.armor.equip_generic block @a ~ ~ ~ 1 1
+#particle
+playsound block.chiseled_bookshelf.insert block @a ~ ~ ~ 1 1
+particle crit ~ ~0.1 ~ 0.2 0.2 0.2 0.1 5

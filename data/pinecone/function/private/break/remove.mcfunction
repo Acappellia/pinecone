@@ -1,5 +1,5 @@
 #playsound
-playsound block.stone.break block @a ~ ~ ~ 1 1
+playsound block.chiseled_bookshelf.break block @a ~ ~ ~ 1 1
 
 #init data
 data remove storage pinecone:tmp remove_info
@@ -21,12 +21,12 @@ execute if data storage pinecone:tmp remove_fur_data.placement.barrier[0] run fu
 execute if data storage pinecone:tmp remove_fur_data.placement.light[0] run function pinecone:private/break/light/loop
 
 #modify item data
-data modify storage pinecone:tmp remove_fur_data.placement.item_data merge value {components:{"minecraft:max_stack_size":64,"minecraft:custom_data":{pinecone_fur:1b},"minecraft:consumable":{animation:"none",consume_seconds:1000000,has_consume_particles:false},"minecraft:attribute_modifiers":{modifiers:[],show_in_tooltip:false}}}
+data modify storage pinecone:tmp remove_fur_data.item_data merge value {components:{"minecraft:max_stack_size":64,"minecraft:custom_data":{pinecone_fur:1b},"minecraft:consumable":{animation:"none",consume_seconds:1000000,has_consume_particles:false},"minecraft:attribute_modifiers":{modifiers:[],show_in_tooltip:false}}}
 
 #give item
 setblock 1600 -64 1600 bedrock
 setblock 1600 -64 1600 shulker_box{Items:[{Slot:0b,id:"minecraft:apple",count:1}]}
-data modify block 1600 -64 1600 Items[0] merge from storage pinecone:tmp remove_fur_data.placement.item_data
+data modify block 1600 -64 1600 Items[0] merge from storage pinecone:tmp remove_fur_data.item_data
 execute if data storage pinecone:tmp dyed_color run data modify block 1600 -64 1600 Items[0].components."minecraft:dyed_color" set from storage pinecone:tmp dyed_color
 loot spawn ~ ~ ~ mine 1600 -64 1600 stone[minecraft:custom_data={drop_contents:1}]
 setblock 1600 -64 1600 bedrock
