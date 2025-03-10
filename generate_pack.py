@@ -28,40 +28,13 @@ dp_recipe_loc = abs_path + '/data/' + pack_name + '/recipe/'
 function_init_file = abs_path + '/data/minecraft/tags/function/load.json'
 csv_file = abs_path + '/furniture_import_sheet.csv'
 
-try:
-    os.mkdir(model_file_loc)
-except FileExistsError: 
-    pass
-
-try:
-    os.mkdir(json_file_loc)
-except FileExistsError: 
-    pass
-
-try:
-    os.mkdir(png_file_loc)
-except FileExistsError: 
-    pass
-
-try:
-    os.mkdir(atlases_file_loc)
-except FileExistsError: 
-    pass
-
-try:
-    os.mkdir(dp_private_loc)
-except FileExistsError: 
-    pass
-
-try:
-    os.mkdir(dp_adv_loc)
-except FileExistsError: 
-    pass
-
-try:
-    os.mkdir(dp_recipe_loc)
-except FileExistsError: 
-    pass
+os.makedirs(model_file_loc,exist_ok=True)
+os.makedirs(json_file_loc,exist_ok=True)
+os.makedirs(png_file_loc,exist_ok=True)
+os.makedirs(atlases_file_loc,exist_ok=True)
+os.makedirs(dp_private_loc,exist_ok=True)
+os.makedirs(dp_adv_loc,exist_ok=True)
+os.makedirs(dp_recipe_loc,exist_ok=True)
 
 #read csv
 csv_rows = []
@@ -74,8 +47,6 @@ with open(csv_file) as file:
 #find all files
 json_file_list = []
 png_file_list = []
-
-
 
 for root, _, files in os.walk(import_dir):
     for file in files:
@@ -93,7 +64,7 @@ print('Found', json_file_count, 'JSON files and', png_file_count, 'PNG files')
 #copy & modify json files
 for file_name in json_file_list:
     shutil.copy2(file_name, json_file_loc)
-    with open(json_file_loc + str.split(file_name,'/')[-1], 'r+') as file:
+    with open(json_file_loc + os.path.split(file_name)[1], 'r+') as file:
         jsondata = json.load(file)
         for key in jsondata['textures']:
             png_dir = jsondata['textures'][key]
@@ -109,7 +80,7 @@ for file_name in png_file_list:
 
 #add atlases file
 with open(atlases_file_loc + 'blocks.json', 'w') as file:
-    jsondata = {'sources':[{'type':'directory','source':'pinecone','prefix':'pinecone/'}]}
+    jsondata = {'sources':[{'type':'directory','source': pack_name + ':pinecone','prefix': pack_name + ':pinecone/'}]}
     file.write(json.dumps(jsondata,indent=2))
 
 #default recipe
@@ -134,7 +105,8 @@ recipe_cut = {
             "attribute_modifiers": {
                 "modifiers": [],
                 "show_in_tooltip": False
-            }
+            },
+            "max_stack_size":64
         }
     }
 }
@@ -172,7 +144,7 @@ advancement_json = {
     }
 }
 
-print('Found' + len(csv_rows) + 'defined furnitures')
+print('Found', len(csv_rows), 'defined furnitures')
 
 #add furnitures
 for row in csv_rows:
@@ -197,7 +169,7 @@ for row in csv_rows:
     advancement_json['rewards']['recipes'].append(furniture_full_id)
 
     #add furniture init data
-    init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '"set value {\\\n'
+    init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '" set value {\\\n'
 
     init_command += 'transfer:{'
     if row[13] != '':
@@ -267,6 +239,14 @@ with open(function_init_file, 'r+') as file:
     file.seek(0)
     file.write(json.dumps(jsondata,indent=2))
     file.truncate()
+
+#modify pack.mcmeta
+with open (abs_path + '/pack.mcmeta', 'r+') as file:
+    jsondata = json.load(file)
+    jsondata['pack']['description'][1]['text'] = pack_name
+    file.seek(0)
+    file.write(json.dumps(jsondata,indent=2))
+    file.truncate() 
 
 #pack to zip
 print('Packing to zip..')

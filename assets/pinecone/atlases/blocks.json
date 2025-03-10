@@ -2,8 +2,8 @@
     "sources": [
         {
             "type": "directory",
-            "prefix": "pinecone",
-            "source": "pinecone/"
+            "prefix": "pinecone:pinecone",
+            "source": "pinecone:pinecone/"
         }
     ]
 }
