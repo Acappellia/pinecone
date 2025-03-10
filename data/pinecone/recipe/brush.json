@@ -47,7 +47,7 @@
             "custom_data": {
                 "pinecone_brush": 1
             },
-            "item_model": "minecraft:brush",
+            "item_model": "pinecone:brush",
             "consumable": {
                 "animation": "none",
                 "consume_seconds": 1000000,

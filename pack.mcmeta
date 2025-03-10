@@ -1,6 +1,24 @@
 {
     "pack": {
-        "description": "pinecone_1.21.4",
-        "pack_format": 61
+        "pack_format": 61,
+        "supported_formats": [
+            46,
+            61
+        ],
+        "description": [
+            {
+                "text": "扩展家具包 - ",
+                "color": "gray"
+            },
+            {
+                "text": "unnamed_pack",
+                "color": "white"
+            },
+            {
+                "text": "\nPowered by Pinecone - MC 1.21.4",
+                "color": "dark_gray",
+                "italic": true
+            }
+        ]
     }
 }

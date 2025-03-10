@@ -1,0 +1,12 @@
+{
+    "model": {
+        "type": "model",
+        "model": "pinecone:pinecone/brush",
+        "tints": [
+            {
+                "type": "dye",
+                "default": -1
+            }
+        ]
+    }
+}

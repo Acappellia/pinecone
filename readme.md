@@ -174,3 +174,20 @@ interaction-转换 pinecone_transfer
 
 item_display-左转动 pinecone_rotate_left
 item_display-右转动 pinecone_rotate_right
+
+## 导出脚本功能
+
+```
+read import_sheet.csv;
+read pack name from input;
+copy all picture to dest;
+for each furniture in csv:
+    change dir in .json model;
+    copy .json model to dest;
+    create recipe;
+    record recipe in advancement;
+    record furniture data in mcfunction;
+generate datapack namespace;
+generage pack.mcmeta;
+make zip;
+```
