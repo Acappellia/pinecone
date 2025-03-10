@@ -2,9 +2,9 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "pinecone:pinecone/brush01",
-		"1": "pinecone:pinecone/brush02",
-		"particle": "pinecone:pinecone/brush01"
+		"0": "pinecone:item/brush01",
+		"1": "pinecone:item/brush02",
+		"particle": "pinecone:item/brush01"
 	},
 	"elements": [
 		{

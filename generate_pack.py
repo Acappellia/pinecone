@@ -17,7 +17,7 @@ import_dir = abs_path + '/models_to_add'
 
 model_file_loc = abs_path + '/assets/' + pack_name + '/items/'
 json_file_loc = abs_path + '/assets/' + pack_name + '/models/pinecone/'
-png_file_loc = abs_path + '/assets/' + pack_name + '/textures/pinecone/'
+png_file_loc = abs_path + '/assets/' + pack_name + '/textures/item/'
 atlases_file_loc = abs_path + '/assets/' + pack_name + '/atlases/'
 
 dp_private_loc = abs_path + '/data/' + pack_name + '/function/private/'
@@ -31,7 +31,7 @@ csv_file = abs_path + '/furniture_import_sheet.csv'
 os.makedirs(model_file_loc,exist_ok=True)
 os.makedirs(json_file_loc,exist_ok=True)
 os.makedirs(png_file_loc,exist_ok=True)
-os.makedirs(atlases_file_loc,exist_ok=True)
+#os.makedirs(atlases_file_loc,exist_ok=True)
 os.makedirs(dp_private_loc,exist_ok=True)
 os.makedirs(dp_adv_loc,exist_ok=True)
 os.makedirs(dp_recipe_loc,exist_ok=True)
@@ -68,7 +68,7 @@ for file_name in json_file_list:
         jsondata = json.load(file)
         for key in jsondata['textures']:
             png_dir = jsondata['textures'][key]
-            new_png_dir = pack_name + ':pinecone/' + str.split(png_dir,'/')[-1]
+            new_png_dir = pack_name + ':item/' + str.split(png_dir,'/')[-1]
             jsondata['textures'][key] = new_png_dir
         file.seek(0)
         file.write(json.dumps(jsondata,indent=2))
@@ -79,9 +79,9 @@ for file_name in png_file_list:
     shutil.copy2(file_name, png_file_loc)
 
 #add atlases file
-with open(atlases_file_loc + 'blocks.json', 'w') as file:
-    jsondata = {'sources':[{'type':'directory','source': pack_name + ':pinecone','prefix': pack_name + ':pinecone/'}]}
-    file.write(json.dumps(jsondata,indent=2))
+#with open(atlases_file_loc + 'blocks.json', 'w') as file:
+#    jsondata = {'sources':[{'type':'directory','source': pack_name + ':pinecone','prefix': pack_name + ':pinecone/'}]}
+#    file.write(json.dumps(jsondata,indent=2))
 
 #default recipe
 recipe_cut = {
@@ -163,7 +163,7 @@ for row in csv_rows:
     recipe_json['result']['components']['minecraft:item_name'] = row[1]
     recipe_json['result']['components']['minecraft:item_model'] = furniture_full_id
     with open(dp_recipe_loc + furniture_id +'.json','w') as file:
-        file.write(json.dumps(recipe_json,indent=2))
+        file.write(json.dumps(recipe_json,indent=2,ensure_ascii=False))
     
     #add recipe to advancement
     advancement_json['rewards']['recipes'].append(furniture_full_id)
@@ -234,7 +234,7 @@ with open(dp_adv_loc + 'give_recipe.json', 'w') as file:
 #modify datapack init
 with open(function_init_file, 'r+') as file:
     jsondata = json.load(file)
-    new_function_dic = {'id': pack_name + ':private/init','required':True}
+    new_function_dic = {'id': pack_name + ':private/init','required':False}
     jsondata['values'].append(new_function_dic)
     file.seek(0)
     file.write(json.dumps(jsondata,indent=2))
@@ -245,7 +245,7 @@ with open (abs_path + '/pack.mcmeta', 'r+') as file:
     jsondata = json.load(file)
     jsondata['pack']['description'][1]['text'] = pack_name
     file.seek(0)
-    file.write(json.dumps(jsondata,indent=2))
+    file.write(json.dumps(jsondata,indent=2,ensure_ascii=False))
     file.truncate() 
 
 #pack to zip
