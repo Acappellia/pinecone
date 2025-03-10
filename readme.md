@@ -2,7 +2,7 @@
 
 Minecraft Java 1.21.4+
 
-（努力成为）简洁易用的家具生成框架
+简洁易用的家具生成框架
 
 ## 功能
 
@@ -21,7 +21,8 @@ Minecraft Java 1.21.4+
     - 获取家具
     - 获取工具/刷子
 - 多家具包支持
-    - 完全抛弃数字id，使用模型的名称作为家具id
+    - 使用模型的名称作为家具id
+    - 使用相同的框架导出的不同家具包可以共同使用
 
 ## 使用方法
 
@@ -39,9 +40,24 @@ Minecraft Java 1.21.4+
 
 ## 家具生成表
 
-表格提供了一些示例，按照示例格式填写即可
-填写时请删除示例数据
+表格提供了一些示例，按照示例格式填写即可。注意事项：
+
+- 填写后请删除已有的示例数据
+- 家具id，家具名称不可省略
+- 屏障、光源、空气方块的配置，必须在对齐方块时才会生效
+- 为了防止csv读取出错，最后一列占位符请不要空着
+- 导出时目前不会进行csv填写格式检查，如果导出错误请检查是否填错，或者联系作者支持
+
 TBD
+
+## 游戏内使用
+
+- `/function <pack_name>:give_all`
+    - 获取 `<pack_name>` 家具包添加的所有家具
+- 工作台合成颜料刷
+    - 使用 刷子+任意染料+任意粘稠的液体/胶状物 合成
+- 切石机制作家具
+    - 根据配置时指定的配方合成
 
 ## 储存架构(nbt format)
 
@@ -183,16 +199,16 @@ void transfer_furniture:{
 
 ## Tag
 
-家具intearction pinecone_fur
-家具item_display pinecone_display
-家具base pinecone_base
+- 家具intearction pinecone_fur
+- 家具item_display pinecone_display
+- 家具base pinecone_base
 
-interaction-座椅 pinecone_seat
-interaction-晃动 pinecone_shake
-interaction-转换 pinecone_transfer
+- interaction-座椅 pinecone_seat
+- interaction-晃动 pinecone_shake
+- interaction-转换 pinecone_transfer
 
-item_display-左转动 pinecone_rotate_left
-item_display-右转动 pinecone_rotate_right
+- item_display-左转动 pinecone_rotate_left
+- item_display-右转动 pinecone_rotate_right
 
 ## 导出脚本功能
 

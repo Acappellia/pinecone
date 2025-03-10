@@ -5,7 +5,7 @@ import csv, json, os, shutil, re, zipfile
 
 #read args
 abs_path = os.path.abspath('.')
-print('Please input the new pack name. Must be named using \'a-z\', \'0-9\', \'_\', \'-\'')
+print('Please enter the new pack name. Can only be named using \'a-z\', \'0-9\', \'_\', \'-\'')
 raw_input = input()
 pack_name = re.sub(r'[^a-z0-9-_]', '', raw_input)
 if pack_name == '':
@@ -149,6 +149,8 @@ print('Found', len(csv_rows), 'defined furnitures')
 
 #add furnitures
 for row in csv_rows:
+    if row[0] == '':
+        continue
     furniture_id = row[0]
     furniture_full_id = pack_name + ':' + furniture_id
     
@@ -159,15 +161,16 @@ for row in csv_rows:
         file.write(json.dumps(model_json,indent=2))
     
     #create recipe
-    recipe_json = recipe_cut
-    recipe_json['ingredient'] = row[2]
-    recipe_json['result']['components']['minecraft:item_name'] = row[1]
-    recipe_json['result']['components']['minecraft:item_model'] = furniture_full_id
-    with open(dp_recipe_loc + furniture_id +'.json','w') as file:
-        file.write(json.dumps(recipe_json,indent=2,ensure_ascii=False))
-    
-    #add recipe to advancement
-    advancement_json['rewards']['recipes'].append(furniture_full_id)
+    if row[2] != '':
+        recipe_json = recipe_cut
+        recipe_json['ingredient'] = row[2]
+        recipe_json['result']['components']['minecraft:item_name'] = row[1]
+        recipe_json['result']['components']['minecraft:item_model'] = furniture_full_id
+        with open(dp_recipe_loc + furniture_id +'.json','w') as file:
+            file.write(json.dumps(recipe_json,indent=2,ensure_ascii=False))
+        
+        #add recipe to advancement
+        advancement_json['rewards']['recipes'].append(furniture_full_id)
 
     #add furniture init data
     init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '" set value {\\\n'
