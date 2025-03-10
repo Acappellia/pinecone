@@ -174,7 +174,7 @@ for row in csv_rows:
 
     init_command += 'transfer:{'
     if row[15] != '':
-        init_command += 'target:"' + pack_name + ':' + row[13] + '"'
+        init_command += 'target:"' + pack_name + ':' + row[15] + '"'
         if row[16] == '1':
             init_command += ',require_tool:1b'
     init_command += '},\\\n'

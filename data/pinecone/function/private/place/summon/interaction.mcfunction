@@ -2,6 +2,9 @@
 data modify entity @s width set from storage pinecone:tmp place_fur_data.placement.bounding_box[0]
 data modify entity @s height set from storage pinecone:tmp place_fur_data.placement.bounding_box[1]
 
+# set rotation
+execute store result entity @s Rotation[0] float 1 run data get storage pinecone:tmp place_info.rotation
+
 #store seat height
 scoreboard players set @s pinecone_seat_height_cm 50
 execute store result score @s pinecone_seat_height_cm run data get storage pinecone:tmp place_fur_data.interaction.seat_height 100
