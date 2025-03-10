@@ -130,7 +130,8 @@ with open(dp_private_loc + 'init.mcfunction', 'w') as file:
     file.write('#init ' + pack_name + ' furniture data')
 
 with open(dp_loc + 'give_all.mcfunction', 'w') as file:
-    file.write('#give all furnitures in ' + pack_name)
+    give_brush_cmd = 'give @s leather_horse_armor[item_model="pinecone:brush",custom_data={pinecone_brush:1b},consumable={animation:"none",consume_seconds:1000000,has_consume_particles:false},attribute_modifiers={modifiers:[],show_in_tooltip:false},item_name=\'"颜料刷"\',lore=[\'[{"text":"手持时：","color":"gray","italic":false}]\',\'[{"text":"[","color":"gray","italic":false},{"keybind": "key.sneak","color":"white","italic":false},{"text":"+","color":"gray","italic":false},{"keybind": "key.use","color":"white","italic":false},{"text":"] ","color":"gray","italic":false},{"text":"循环切换刷子颜色","color":"white","italic":false}]\',\'[{"text":"[","color":"gray","italic":false},{"keybind": "key.use","color":"white","italic":false},{"text":"] ","color":"gray","italic":false},{"text":"对准家具并涂色","color":"white","italic":false}]\']]'
+    file.write('#give all furnitures in ' + pack_name + '\n' + give_brush_cmd)
 
 advancement_json = {
     "criteria": {
@@ -172,16 +173,16 @@ for row in csv_rows:
     init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '" set value {\\\n'
 
     init_command += 'transfer:{'
-    if row[13] != '':
+    if row[15] != '':
         init_command += 'target:"' + pack_name + ':' + row[13] + '"'
-        if row[14] != '':
+        if row[16] == '1':
             init_command += ',require_tool:1b'
     init_command += '},\\\n'
 
     init_command += 'placement:{'
-    if row[8] != '':
+    if row[8] == '1':
         init_command += 'align_block:1b,'
-    if row[9] != '':
+    if row[9] == '1':
         init_command += 'arb_rotation:1b,'
     if row[7] != '':
         init_command += 'offset:' + row[7] + ','
@@ -202,20 +203,20 @@ for row in csv_rows:
     init_command += '},\\\n'
 
     init_command += 'interaction:{'
-    if row[10] != '':
+    if row[10] == '1':
         init_command += 'is_seat:1b'
         if row[11] != '':
             init_command += ',seat_height:' + row[11]
-        if row[12] != '':
+        if row[12] == '1':
             init_command += ',is_shake:1b'
-    elif row[12] != '':
+    elif row[12] == '1':
         init_command += 'is_shake:1b'
     init_command += '},\\\n'
 
     init_command += 'auto:{'
-    if row[13] != '':
+    if row[13] == '1':
         init_command += 'rotate_left:1b'
-    elif row[14] != '':
+    elif row[14] == '1':
         init_command += 'rotate_right:1b'
     init_command += '}}\n'
 
