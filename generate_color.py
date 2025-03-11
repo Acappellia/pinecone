@@ -25,7 +25,7 @@ for row in rows:
     colorint.append(rgb_to_int(*row))
 
 for i in range(32):
-    commands = 'title @s actionbar [{"text":"颜色切换: ","color":"gray"},{"text":"[ ","color":"white"},'
+    commands = 'title @s actionbar [{"text":"选色: ","color":"gray"},{"text":"[ ","color":"white"},'
     text_block = []
     for j in range (i-8,i+9):
         if j >= 32:
