@@ -1,5 +1,12 @@
+# store dye color
+data remove storage pinecone:tmp dyed_color
+data modify storage pinecone:tmp dyed_color set from entity @s item.components."minecraft:dyed_color"
+
 # set item
 data modify entity @s item set from storage pinecone:tmp transfer_target_fur_data.item_data
+
+# restore dye color
+data modify entity @s item.components."minecraft:dyed_color" set from storage pinecone:tmp dyed_color
 
 # init display
 data merge entity @s {transformation:[-2,0,0,0,0,0,2,0,0,2,0,0,0,0,0,4],view_range:0.5,item_display:"fixed",teleport_duration:20}
