@@ -263,7 +263,7 @@ def add_directory_to_zip(zipf, directory):
             arcname = os.path.relpath(file_path, start=os.path.dirname(directory))
             zipf.write(file_path, arcname=arcname)
 
-with zipfile.ZipFile(abs_path + '/generated_pack.zip', "w", zipfile.ZIP_DEFLATED) as zipf:
+with zipfile.ZipFile(abs_path + '/pinecone-' + pack_name + '-1.21.4.zip', "w", zipfile.ZIP_DEFLATED) as zipf:
     for directory in TARGET_DIRS:
         add_directory_to_zip(zipf, directory)
     zipf.write(abs_path + '/pack.mcmeta', 'pack.mcmeta')
