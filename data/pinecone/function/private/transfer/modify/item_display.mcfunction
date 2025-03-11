@@ -8,9 +8,6 @@ data modify entity @s item set from storage pinecone:tmp transfer_target_fur_dat
 # restore dye color
 data modify entity @s item.components."minecraft:dyed_color" set from storage pinecone:tmp dyed_color
 
-# init display
-data merge entity @s {transformation:[-2,0,0,0,0,0,2,0,0,2,0,0,0,0,0,4],view_range:0.5,item_display:"fixed",teleport_duration:20}
-
 # add tag
 tag @s add pinecone_display
 tag @s remove pinecone_rotate_left
