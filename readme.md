@@ -1,6 +1,8 @@
 # Pinecone | 松果核 家具框架
 
-当前版本 r1.0 Minecraft Java 1.21.4
+<LOGO PLACEHOLDER>
+
+**当前版本 r1.0 Minecraft Java 1.21.4**
 
 简洁易用的家具生成框架，面向零数据包基础的模型作者，提供了从java模型到原版游戏内家具的一键打包工具。
 
