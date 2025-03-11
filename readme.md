@@ -36,7 +36,9 @@
     - 无需保证相对路径正确，但需要保证每个模型都指向了对应的贴图
     - `models_to_add/`路径下可以是任意文件结构，可以把所有的 `.json` 和 `.png` 简单的放置在这个目录
     - 无关文件不需要放在这个路径下
-- 按照后面的要求格式编辑 `furniture_import_sheet.csv` 文件
+- 编辑家具生成表 `furniture_import_sheet.csv` 文件
+    - 格式需要按照示例数据填写
+    - 请参照后一小结的注意事项
     - 文件需要保存为 UTF-8 格式
 - 运行 `generate_pack.py`
     - 按照提示输入家具包名称
@@ -70,7 +72,11 @@ TBD
 - 切石机制作家具
     - 根据配置时指定的配方合成
 
-## 储存架构(nbt format)
+---
+
+## 开发备注
+
+### 储存架构(nbt format)
 
 ```
 pinecone:fur_data:{
@@ -122,7 +128,7 @@ pinecone:fur_data:{
 }
 ```
 
-## 主要逻辑(pseudocode)
+### 主要逻辑(pseudocode)
 
 ```
 void place_furniture :{
@@ -208,20 +214,20 @@ void transfer_furniture:{
 }
 ```
 
-## Tag
+### 实体 Tag
 
-- 家具intearction pinecone_fur
-- 家具item_display pinecone_display
-- 家具base pinecone_base
+- 家具intearction `pinecone_fur`
+- 家具item_display `pinecone_display`
+- 家具item_display_base `pinecone_base`
 
-- interaction-座椅 pinecone_seat
-- interaction-晃动 pinecone_shake
-- interaction-转换 pinecone_transfer
+- interaction-座椅 `pinecone_seat`
+- interaction-晃动 `pinecone_shake`
+- interaction-转换 `pinecone_transfer`
 
-- item_display-左转动 pinecone_rotate_left
-- item_display-右转动 pinecone_rotate_right
+- item_display-左转动 `pinecone_rotate_left`
+- item_display-右转动 `pinecone_rotate_right`
 
-## 导出脚本功能
+### 导出脚本操作
 
 ```
 read import_sheet.csv;
