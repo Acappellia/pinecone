@@ -1,2 +1,3 @@
 .DS_Store
-/models_to_add
+/models_to_add/**.json
+/models_to_add/**.png
