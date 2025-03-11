@@ -45,7 +45,7 @@
 - 运行 `generate_pack.py`
     - 按照提示输入家具包名称
 - 家具包生成后会自动打包为 `pinecone-<pack_name>-1.21.4.zip`
-    - 如果需要修改，可以直接修改目录下的内容，然后将 `data/`，`assets/`，`pack.mcmeta`，`pack.png` 手动打包
+    - 如果需要修改，可以直接修改目录下的内容，然后将 `data/`，`assets/`，`pack.mcmeta`，`pack.png`，`LICENCE` 手动打包
 
 ## 家具生成表
 
