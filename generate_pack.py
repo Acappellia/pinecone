@@ -268,6 +268,7 @@ with zipfile.ZipFile(abs_path + '/pinecone-' + pack_name + '-1.21.4.zip', "w", z
         add_directory_to_zip(zipf, directory)
     zipf.write(abs_path + '/pack.mcmeta', 'pack.mcmeta')
     zipf.write(abs_path + '/pack.png', 'pack.png')
+    zipf.write(abs_path + '/LICENCE', 'LICENCE')
 
 #complete
 print('Complete!')
