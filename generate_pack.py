@@ -55,6 +55,8 @@ for root, _, files in os.walk(import_dir):
             json_file_list.append(file_path)
         elif file_path.endswith('.png'):
             png_file_list.append(file_path)
+        elif file_path.endswith('.png.mcmeta'):
+            png_file_list.append(file_path)
 
 json_file_count = len(json_file_list)
 png_file_count = len(png_file_list)
