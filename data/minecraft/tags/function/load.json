@@ -1,17 +1,17 @@
 {
-    "replace": false,
-    "values": [
-        {
-            "id": "pinecone:private/init",
-            "required": true
-        },
-        {
-            "id": "#bs.hitbox:load",
-            "required": false
-        },
-        {
-            "id": "#bs.raycast:load",
-            "required": false
-        }
-    ]
+  "replace": false,
+  "values": [
+    {
+      "id": "pinecone:private/init",
+      "required": true
+    },
+    {
+      "id": "#bs.hitbox:load",
+      "required": false
+    },
+    {
+      "id": "#bs.raycast:load",
+      "required": false
+    }
+  ]
 }
