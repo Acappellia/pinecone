@@ -38,7 +38,7 @@ os.makedirs(dp_recipe_loc,exist_ok=True)
 
 #read csv
 csv_rows = []
-with open(csv_file) as file:
+with open(csv_file, encoding='utf-8') as file:
     csvreader = csv.reader(file)
     header = next(csvreader)
     for row in csvreader:
@@ -69,7 +69,7 @@ MC_PARENT = ['minecraft:block/cube_all','minecraft:item/generated']
 
 for file_name in json_file_list:
     shutil.copy2(file_name, json_file_loc)
-    with open(json_file_loc + os.path.split(file_name)[1], 'r+') as file:
+    with open(json_file_loc + os.path.split(file_name)[1], 'r+', encoding='utf-8') as file:
         jsondata = json.load(file)
         if 'textures' in jsondata:
             for key in jsondata['textures']:
@@ -88,7 +88,7 @@ for file_name in png_file_list:
     shutil.copy2(file_name, png_file_loc)
 
 #add atlases file
-#with open(atlases_file_loc + 'blocks.json', 'w') as file:
+#with open(atlases_file_loc + 'blocks.json', 'w', encoding='utf-8') as file:
 #    jsondata = {'sources':[{'type':'directory','source': pack_name + ':pinecone','prefix': pack_name + ':pinecone/'}]}
 #    file.write(json.dumps(jsondata,indent=2))
 
@@ -135,10 +135,10 @@ item_model = {
 }
 
 #init mcfunction and advancement
-with open(dp_private_loc + 'init.mcfunction', 'w') as file:
+with open(dp_private_loc + 'init.mcfunction', 'w', encoding='utf-8') as file:
     file.write('#init ' + pack_name + ' furniture data')
 
-with open(dp_loc + 'give_all.mcfunction', 'w') as file:
+with open(dp_loc + 'give_all.mcfunction', 'w', encoding='utf-8') as file:
     give_brush_cmd = 'give @s leather_horse_armor[item_model="pinecone:brush",custom_data={pinecone_brush:1b},consumable={animation:"none",consume_seconds:1000000,has_consume_particles:false},attribute_modifiers={modifiers:[],show_in_tooltip:false},item_name=\'"颜料刷"\',lore=[\'[{"text":"手持时：","color":"gray","italic":false}]\',\'[{"text":"[","color":"gray","italic":false},{"keybind": "key.sneak","color":"white","italic":false},{"text":"+","color":"gray","italic":false},{"keybind": "key.use","color":"white","italic":false},{"text":"] ","color":"gray","italic":false},{"text":"循环切换刷子颜色","color":"white","italic":false}]\',\'[{"text":"[","color":"gray","italic":false},{"keybind": "key.use","color":"white","italic":false},{"text":"] ","color":"gray","italic":false},{"text":"对准家具并涂色","color":"white","italic":false}]\']]'
     file.write('#give all furnitures in ' + pack_name + '\n' + give_brush_cmd)
 
@@ -166,7 +166,7 @@ for row in csv_rows:
     #create item model
     model_json = item_model
     model_json['model']['model'] = pack_name +':pinecone/' + furniture_id
-    with open(model_file_loc + furniture_id +'.json','w') as file:
+    with open(model_file_loc + furniture_id +'.json','w', encoding='utf-8') as file:
         file.write(json.dumps(model_json,indent=2))
     
     #create recipe
@@ -175,7 +175,7 @@ for row in csv_rows:
         recipe_json['ingredient'] = row[2]
         recipe_json['result']['components']['minecraft:item_name'] = row[1]
         recipe_json['result']['components']['minecraft:item_model'] = furniture_full_id
-        with open(dp_recipe_loc + furniture_id +'.json','w') as file:
+        with open(dp_recipe_loc + furniture_id +'.json','w', encoding='utf-8') as file:
             file.write(json.dumps(recipe_json,indent=2,ensure_ascii=False))
         
         #add recipe to advancement
@@ -232,20 +232,20 @@ for row in csv_rows:
         init_command += 'rotate_right:1b'
     init_command += '}}\n'
 
-    with open(dp_private_loc + 'init.mcfunction', 'a') as file:
+    with open(dp_private_loc + 'init.mcfunction', 'a', encoding='utf-8') as file:
         file.write('\n' + init_command)
     
     #add furniture give_all
     give_command = 'give @s leather_horse_armor[item_model="' + furniture_full_id + '",custom_data={pinecone_fur:1b},consumable={animation:"none",consume_seconds:1000000,has_consume_particles:false},max_stack_size=64,attribute_modifiers={modifiers:[],show_in_tooltip:false},item_name=\'"' + row[1] + '"\']'
-    with open(dp_loc + 'give_all.mcfunction', 'a') as file:
+    with open(dp_loc + 'give_all.mcfunction', 'a', encoding='utf-8') as file:
         file.write('\n' + give_command)
 
 #write advancement
-with open(dp_adv_loc + 'give_recipe.json', 'w') as file:
+with open(dp_adv_loc + 'give_recipe.json', 'w', encoding='utf-8') as file:
     file.write(json.dumps(advancement_json,indent=2))
 
 #modify datapack init
-with open(function_init_file, 'r+') as file:
+with open(function_init_file, 'r+', encoding='utf-8') as file:
     jsondata = json.load(file)
     new_function_dic = {'id': pack_name + ':private/init','required':False}
     jsondata['values'].append(new_function_dic)
@@ -254,12 +254,13 @@ with open(function_init_file, 'r+') as file:
     file.truncate()
 
 #modify pack.mcmeta
-with open (abs_path + '/pack.mcmeta', 'r+') as file:
+with open (abs_path + '/pack.mcmeta', 'r+', encoding='utf-8') as file:
     jsondata = json.load(file)
-    jsondata['pack']['description'][1]['text'] = pack_name
-    file.seek(0)
-    file.write(json.dumps(jsondata,indent=2,ensure_ascii=False))
-    file.truncate() 
+    if ['pack']['description'][1]['text'] == 'unnamed_pack':
+        jsondata['pack']['description'][1]['text'] = pack_name
+        file.seek(0)
+        file.write(json.dumps(jsondata,indent=2,ensure_ascii=False))
+        file.truncate()
 
 #pack to zip
 print('Packing to zip..')
@@ -281,3 +282,4 @@ with zipfile.ZipFile(abs_path + '/pinecone-' + pack_name + '-1.21.4.zip', "w", z
 
 #complete
 print('Complete!')
+os.system('PAUSE')
