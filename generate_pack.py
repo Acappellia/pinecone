@@ -256,7 +256,7 @@ with open(function_init_file, 'r+', encoding='utf-8') as file:
 #modify pack.mcmeta
 with open (abs_path + '/pack.mcmeta', 'r+', encoding='utf-8') as file:
     jsondata = json.load(file)
-    if ['pack']['description'][1]['text'] == 'unnamed_pack':
+    if jsondata['pack']['description'][1]['text'] == 'unnamed_pack':
         jsondata['pack']['description'][1]['text'] = pack_name
         file.seek(0)
         file.write(json.dumps(jsondata,indent=2,ensure_ascii=False))
