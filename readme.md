@@ -43,7 +43,7 @@
     - 格式需要按照示例数据填写
     - 请参照后一小结的注意事项
     - 文件需要保存为 UTF-8 格式
-- 运行 `generate_pack.py`
+- 使用python运行 `generate_pack.py` 或在windows上直接运行 `generate_pack.exe`
     - 按照提示输入家具包名称
 - 家具包生成后会自动打包为 `pinecone-<pack_name>-1.21.4.zip`
     - 如果需要修改，可以直接修改目录下的内容，然后将 `data/`，`assets/`，`pack.mcmeta`，`pack.png`，`LICENCE` 手动打包
