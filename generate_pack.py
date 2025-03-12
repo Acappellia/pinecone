@@ -64,14 +64,21 @@ png_file_count = len(png_file_list)
 print('Found', json_file_count, 'JSON files and', png_file_count, 'PNG files')
 
 #copy & modify json files
+
+MC_PARENT = ['minecraft:block/cube_all','minecraft:item/generated']
+
 for file_name in json_file_list:
     shutil.copy2(file_name, json_file_loc)
     with open(json_file_loc + os.path.split(file_name)[1], 'r+') as file:
         jsondata = json.load(file)
-        for key in jsondata['textures']:
-            png_dir = jsondata['textures'][key]
-            new_png_dir = pack_name + ':item/' + str.split(png_dir,'/')[-1]
-            jsondata['textures'][key] = new_png_dir
+        if 'textures' in jsondata:
+            for key in jsondata['textures']:
+                png_dir = jsondata['textures'][key]
+                new_png_dir = pack_name + ':item/' + str.split(png_dir,'/')[-1]
+                jsondata['textures'][key] = new_png_dir
+        if 'parent' in jsondata:
+            if jsondata['parent'] not in MC_PARENT:
+                jsondata['parent'] = pack_name + ':pinecone/' + str.split(jsondata['parent'],'/')[-1]
         file.seek(0)
         file.write(json.dumps(jsondata,indent=2))
         file.truncate()
