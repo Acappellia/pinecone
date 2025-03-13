@@ -216,7 +216,7 @@ for row in csv_rows:
     init_command += '},\\\n'
 
     init_command += 'item_data:{'
-    if row[19] != '':
+    if row[19] == '':
         init_command += 'id:"minecraft:leather_horse_armor",count:1,components:{item_model:"' + furniture_full_id + '",item_name:\'"' + row[1] + '"\''
     else:
         init_command += 'id:"' + row[19] + '",count:1,components:{item_model:"' + furniture_full_id + '",item_name:\'"' + row[1] + '"\''
