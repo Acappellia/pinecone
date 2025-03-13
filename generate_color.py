@@ -1,5 +1,17 @@
 import csv, sys, getopt, json, os
 
+def hex_to_rgb(hex_color):
+    hex_color = hex_color.lstrip('#')
+    
+    if len(hex_color) == 3:
+        hex_color = ''.join([c * 2 for c in hex_color])
+    
+    r = int(hex_color[0:2], 16)
+    g = int(hex_color[2:4], 16)
+    b = int(hex_color[4:6], 16)
+    
+    return r, g, b
+
 def rgb_to_hex(r, g, b):
     return '#{:02x}{:02x}{:02x}'.format(int(r), int(g), int(b))
 
@@ -11,18 +23,15 @@ out_path = abs_path + '/data/pinecone/function/private/brush/set_color/'
 
 #read csv file
 rows = []
-with open(abs_path + '/colors.csv', 'r') as color_file:
-    csvreader = csv.reader(color_file)
-    header = next(csvreader)
-    for row in csvreader:
-        rows.append(row)
+with open(abs_path + '/colors.hex', 'r') as color_file:
+    rows = color_file.readlines
 
 #calc rgb value
 colorhex = []
 colorint = []
 for row in rows:
-    colorhex.append(rgb_to_hex(*row))
-    colorint.append(rgb_to_int(*row))
+    colorhex.append('#' + row)
+    colorint.append(rgb_to_int(hex_to_rgb(row)))
 
 for i in range(32):
     commands = 'title @s actionbar [{"text":"选色: ","color":"gray"},{"text":"[ ","color":"white"},'
