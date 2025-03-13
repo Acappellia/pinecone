@@ -179,7 +179,7 @@ for row in csv_rows:
         recipe_json['result']['components']['minecraft:item_model'] = furniture_full_id
         if row[17] == '1':
             recipe_json['result']['components']['consumable'] = {}
-            recipe_json['result']['components']['food'] = {'nutrition': int(row[18]), 'saturation': float(row[18])}
+            recipe_json['result']['components']['food'] = {'nutrition': round(float(row[18])), 'saturation': float(row[18])}
         with open(DP_RECIPE_LOC + furniture_id +'.json','w', encoding='utf-8') as file:
             file.write(json.dumps(recipe_json,indent=2,ensure_ascii=False))
         
@@ -221,7 +221,7 @@ for row in csv_rows:
     else:
         init_command += 'id:"' + row[19] + '",count:1,components:{item_model:"' + furniture_full_id + '",item_name:\'"' + row[1] + '"\''
     if row[17] == '1':
-        init_command += ',food:{nutrition:' + str(int(row[18])) + ',saturation:' + row[18] + '}'
+        init_command += ',food:{nutrition:' + str(round(float(row[18]))) + ',saturation:' + row[18] + '}'
         init_command += ',consumable:{}'
     else:
         init_command += ',consumable:{animation:"none",consume_seconds:1000000,has_consume_particles:0b}'
@@ -255,7 +255,7 @@ for row in csv_rows:
     else:
         give_command += 'give @s leather_horse_armor[item_model="' + furniture_full_id + '",custom_data={pinecone_fur:1b},'
     if row[17] == '1':
-        give_command += 'consumable={},food={nutrition:' + str(int(row[18])) + ',saturation:' + row[18] + '},max_stack_size=64,attribute_modifiers={modifiers:[],show_in_tooltip:false},item_name=\'"' + row[1] + '"\']'
+        give_command += 'consumable={},food={nutrition:' + str(round(float(row[18]))) + ',saturation:' + row[18] + '},max_stack_size=64,attribute_modifiers={modifiers:[],show_in_tooltip:false},item_name=\'"' + row[1] + '"\']'
     else:
         give_command += 'consumable={animation:"none",consume_seconds:1000000,has_consume_particles:false},max_stack_size=64,attribute_modifiers={modifiers:[],show_in_tooltip:false},item_name=\'"' + row[1] + '"\']'
     with open(DP_LOC + 'give_all.mcfunction', 'a', encoding='utf-8') as file:
