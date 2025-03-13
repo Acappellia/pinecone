@@ -1,0 +1,2 @@
+execute align xz positioned ~0.5 ~ ~0.5 if predicate pinecone:near_center as @p[tag=pinecone_placer,distance=..7] run return run function pinecone:private/place/summon_fur
+execute as @p[tag=pinecone_placer,distance=..7] run function pinecone:private/place/summon_fur

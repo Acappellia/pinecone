@@ -9,7 +9,7 @@ function pinecone:private/transfer/copy_fur_data with storage pinecone:tmp trans
 
 #check tool
 scoreboard players set #check_tool pinecone 0
-execute if data storage pinecone:tmp transfer_origin_fur_data.transfer{require_tool:1b} as @p[tag=fur_user,distance=..6] unless predicate pinecone:is_holding_tool run scoreboard players set #check_tool pinecone 1
+execute if data storage pinecone:tmp transfer_origin_fur_data.transfer{require_tool:1b} as @p[tag=fur_user,distance=..7] unless predicate pinecone:is_holding_tool run scoreboard players set #check_tool pinecone 1
 execute if score #check_tool pinecone matches 1 run return -1 
 #tellraw @s [{"text": "> ","color": "#22aaff"},{"text": " 使用任意锄头切换家具","color": "gray"}]
 

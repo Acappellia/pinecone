@@ -25,7 +25,7 @@ data modify storage pinecone:tmp dyed_color set from storage pinecone:tmp hand_i
 function pinecone:private/place/copy_fur_data with storage pinecone:tmp place_info
 
 #if not align_block summon
-execute unless data storage pinecone:tmp place_fur_data.placement{align_block:1b} run return run function pinecone:private/place/summon_fur
+execute unless data storage pinecone:tmp place_fur_data.placement{align_block:1b} run return run execute summon marker run function pinecone:private/place/snap_to_block
 
 #if align_block check block
 
