@@ -21,7 +21,7 @@ execute if data storage pinecone:tmp remove_fur_data.placement.barrier[0] run fu
 execute if data storage pinecone:tmp remove_fur_data.placement.light[0] run function pinecone:private/break/light/loop
 
 #modify item data
-data modify storage pinecone:tmp remove_fur_data.item_data merge value {components:{"minecraft:max_stack_size":64,"minecraft:custom_data":{pinecone_fur:1b},"minecraft:consumable":{animation:"none",consume_seconds:1000000,has_consume_particles:false},"minecraft:attribute_modifiers":{modifiers:[],show_in_tooltip:false}}}
+data modify storage pinecone:tmp remove_fur_data.item_data merge value {components:{"minecraft:max_stack_size":64,"minecraft:custom_data":{pinecone_fur:1b},"minecraft:attribute_modifiers":{modifiers:[],show_in_tooltip:false}}}
 
 #give item
 setblock 1600 -64 1600 bedrock
