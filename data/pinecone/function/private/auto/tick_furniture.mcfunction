@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=pinecone_display,distance=..50] run function pinecone:private/auto/check_rotate
