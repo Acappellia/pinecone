@@ -12,8 +12,6 @@ data merge entity @s {transformation:[-2,0,0,0,0,0,2,0,0,2,0,0,0,0,0,4],view_ran
 
 # add tag
 tag @s add pinecone_display
+tag @s add pinecone_fur_base_new
 execute if data storage pinecone:tmp place_fur_data.auto{rotate_left:1b} run tag @s add pinecone_rotate_left
 execute if data storage pinecone:tmp place_fur_data.auto{rotate_right:1b} run tag @s add pinecone_rotate_right
-
-# ride on base
-ride @s mount @n[distance=..0.1,tag=pinecone_fur_base_new,type=item_display]

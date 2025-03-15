@@ -2,7 +2,7 @@
 data remove storage pinecone:tmp transfer_info
 
 #copy furniture id
-execute on vehicle on passengers as @s[type=item_display] run data modify storage pinecone:tmp transfer_info.origin_id set from entity @s item.components."minecraft:item_model"
+execute on vehicle run data modify storage pinecone:tmp transfer_info.origin_id set from entity @s item.components."minecraft:item_model"
 
 #copy furniture data
 function pinecone:private/transfer/copy_fur_data with storage pinecone:tmp transfer_info
@@ -21,7 +21,7 @@ function pinecone:private/transfer/copy_fur_data_target with storage pinecone:tm
 
 #modify entities
 function pinecone:private/transfer/modify/interaction
-execute on vehicle on passengers as @s[type=item_display] run function pinecone:private/transfer/modify/item_display
+execute on vehicle run function pinecone:private/transfer/modify/item_display
 
 #set barrier
 execute if data storage pinecone:tmp transfer_target_fur_data.placement.barrier[0] run function pinecone:private/transfer/barrier/loop

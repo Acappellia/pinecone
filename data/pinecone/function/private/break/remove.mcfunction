@@ -5,11 +5,11 @@ playsound block.chiseled_bookshelf.break block @a ~ ~ ~ 1 1
 data remove storage pinecone:tmp remove_info
 
 #copy furniture id
-execute on vehicle on passengers as @s[type=item_display] run data modify storage pinecone:tmp remove_info.id set from entity @s item.components."minecraft:item_model"
+execute on vehicle run data modify storage pinecone:tmp remove_info.id set from entity @s item.components."minecraft:item_model"
 
 #copy furniture color
 data remove storage pinecone:tmp dyed_color
-execute on vehicle on passengers as @s[type=item_display] run data modify storage pinecone:tmp dyed_color set from entity @s item.components."minecraft:dyed_color"
+execute on vehicle run data modify storage pinecone:tmp dyed_color set from entity @s item.components."minecraft:dyed_color"
 
 #copy furniture data
 function pinecone:private/break/copy_fur_data with storage pinecone:tmp remove_info
@@ -32,4 +32,4 @@ loot spawn ~ ~ ~ mine 1600 -64 1600 stone[minecraft:custom_data={drop_contents:1
 setblock 1600 -64 1600 bedrock
 
 #kill self
-execute on vehicle run function pinecone:private/break/kill
+function pinecone:private/break/kill
