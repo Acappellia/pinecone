@@ -268,11 +268,13 @@ with open(DP_ADV_LOC + 'give_recipe.json', 'w', encoding='utf-8') as file:
 #modify datapack init
 with open(FUNC_INIT_FILE, 'r+', encoding='utf-8') as file:
     jsondata = json.load(file)
-    new_function_dic = {'id': pack_name + ':private/init','required':False}
-    jsondata['values'].append(new_function_dic)
-    file.seek(0)
-    file.write(json.dumps(jsondata,indent=2))
-    file.truncate()
+    function_id = pack_name + ':private/init'
+    if jsondata['values'][-1]['id'] != function_id:
+        new_function_dic = {'id': function_id,'required':False}
+        jsondata['values'].append(new_function_dic)
+        file.seek(0)
+        file.write(json.dumps(jsondata,indent=2))
+        file.truncate()
 
 #modify pack.mcmeta
 with open (ABS_PATH + '/pack.mcmeta', 'r+', encoding='utf-8') as file:
