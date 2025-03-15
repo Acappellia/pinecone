@@ -1,1 +1,1 @@
-$execute positioned ~ ~$(height) ~ summon item_display run function pinecone:private/interact/sit/sit_on_display
+$execute positioned ~ ~$(height) ~ run function pinecone:private/interact/sit/check_summon
