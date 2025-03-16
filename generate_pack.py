@@ -74,11 +74,11 @@ for file_name in json_file_list:
         if 'textures' in jsondata:
             for key in jsondata['textures']:
                 png_dir = jsondata['textures'][key]
-                new_png_dir = pack_name + ':item/' + str.split(png_dir,'/')[-1]
+                new_png_dir = pack_name + ':item/' + (png_dir.split(':')[-1]).split('/')[-1]
                 jsondata['textures'][key] = new_png_dir
         if 'parent' in jsondata:
             if jsondata['parent'] not in MC_PARENT:
-                jsondata['parent'] = pack_name + ':pinecone/' + str.split(jsondata['parent'],'/')[-1]
+                jsondata['parent'] = pack_name + ':pinecone/' + (jsondata['parent'].split(':')[-1]).split('/')[-1]
         file.seek(0)
         file.write(json.dumps(jsondata,indent=2))
         file.truncate()
