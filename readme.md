@@ -1,6 +1,6 @@
 # Pinecone | 松果核 家具框架
 
-![logo.png](https://s2.loli.net/2025/03/16/QNWws4GTSPexOvb.png)
+![logo - big.png](https://s2.loli.net/2025/03/16/5S8FVGR4vEgsXpZ.png)
 
 **当前版本 b0.1.1 Minecraft Java 1.21.4**
 
