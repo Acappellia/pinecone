@@ -1,5 +1,5 @@
 #get bounding box
-execute store result storage pinecone:tmp normal_info.half_width float 0.5 run data get storage pinecone:tmp place_fur_data.placement.bounding_box[0]
+execute store result storage pinecone:tmp normal_info.half_width float 0.005 run data get storage pinecone:tmp place_fur_data.placement.bounding_box[0] 1000
 data modify storage pinecone:tmp normal_info.height set from storage pinecone:tmp place_fur_data.placement.bounding_box[1]
 
 #check if snap
