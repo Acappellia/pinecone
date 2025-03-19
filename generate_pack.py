@@ -212,7 +212,7 @@ for row in csv_rows:
     if row[3] != '':
         init_command += 'bounding_box:' + row[3]
     else:
-        init_command += 'bounding_box:[1.0,1.0]'
+        init_command += 'bounding_box:[1.01,1.01]'
     init_command += '},\\\n'
 
     init_command += 'item_data:{'
