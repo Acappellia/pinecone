@@ -24,6 +24,11 @@ data modify storage pinecone:tmp dyed_color set from storage pinecone:tmp hand_i
 #copy furniture data
 function pinecone:private/place/copy_fur_data with storage pinecone:tmp place_info
 
+#get raycast normal
+execute store result score #ray_hit_normal_x pinecone run data get storage bs:out raycast.hit_normal[0]
+execute store result score #ray_hit_normal_y pinecone run data get storage bs:out raycast.hit_normal[1]
+execute store result score #ray_hit_normal_z pinecone run data get storage bs:out raycast.hit_normal[2]
+
 #if not align_block summon
 execute unless data storage pinecone:tmp place_fur_data.placement{align_block:1b} run return run execute summon marker run function pinecone:private/place/snap_to_block
 
