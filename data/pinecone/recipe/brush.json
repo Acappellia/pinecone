@@ -59,9 +59,9 @@
                 ]
             },
             "lore": [
-                "[{\"text\":\"手持时：\",\"color\":\"gray\",\"italic\":false}]",
-                "[{\"text\":\"[\",\"color\":\"gray\",\"italic\":false},{\"keybind\": \"key.sneak\",\"color\":\"white\",\"italic\":false},{\"text\":\"+\",\"color\":\"gray\",\"italic\":false},{\"keybind\": \"key.use\",\"color\":\"white\",\"italic\":false},{\"text\":\"] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"循环切换刷子颜色\",\"color\":\"white\",\"italic\":false}]",
-                "[{\"text\":\"[\",\"color\":\"gray\",\"italic\":false},{\"keybind\": \"key.use\",\"color\":\"white\",\"italic\":false},{\"text\":\"] \",\"color\":\"gray\",\"italic\":false},{\"text\":\"对准家具并涂色\",\"color\":\"white\",\"italic\":false}]"
+                [{"text":"手持时：","color":"gray","italic":false}],
+                [{"text":"[","color":"gray","italic":false},{"keybind": "key.sneak","color":"white","italic":false},{"text":"+","color":"gray","italic":false},{"keybind": "key.use","color":"white","italic":false},{"text":"] ","color":"gray","italic":false},{"text":"循环切换刷子颜色","color":"white","italic":false}],
+                [{"text":"[","color":"gray","italic":false},{"keybind": "key.use","color":"white","italic":false},{"text":"] ","color":"gray","italic":false},{"text":"对准家具并涂色","color":"white","italic":false}]
             ]
         }
     },
