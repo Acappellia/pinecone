@@ -128,7 +128,9 @@ pinecone:fur_data:{
         },
         auto:{
             rotate_left:1b,
-            rotate_right:1b
+            rotate_right:1b,
+            rotate_vleft:1b,
+            rotate_vright:1b,
         }
     },
     fur_id_2:{
@@ -236,6 +238,9 @@ void transfer_furniture:{
 
 - item_display-左转动 `pinecone_rotate_left`
 - item_display-右转动 `pinecone_rotate_right`
+
+- item_display-竖直左转动 `pinecone_rotate_vleft`
+- item_display-竖直右转动 `pinecone_rotate_vright`
 
 ### 导出脚本操作
 
