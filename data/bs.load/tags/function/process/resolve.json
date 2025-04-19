@@ -1,0 +1,6 @@
+{
+  "values": [
+    "bs.load:resolve/hitbox",
+    "bs.load:resolve/raycast"
+  ]
+}

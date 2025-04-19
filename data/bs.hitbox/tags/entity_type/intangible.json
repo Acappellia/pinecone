@@ -1,7 +1,7 @@
 {
   "__bookshelf__": {
     "feature": true,
-    "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/hitbox.html#intangible",
+    "documentation": "https://docs.mcbookshelf.dev/en/latest/modules/hitbox.html#entities",
     "authors": [
       "Aksiome"
     ],
@@ -14,6 +14,7 @@
       "minecraft_version": "1.21"
     }
   },
+  "replace": true,
   "values": [
     "minecraft:area_effect_cloud",
     "minecraft:arrow",
@@ -31,7 +32,8 @@
     "minecraft:item_display",
     "minecraft:llama_spit",
     "minecraft:marker",
-    "minecraft:potion",
+    "minecraft:splash_potion",
+    "minecraft:lingering_potion",
     "minecraft:small_fireball",
     "minecraft:snowball",
     "minecraft:spectral_arrow",

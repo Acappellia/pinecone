@@ -1,7 +1,7 @@
 {
   "__bookshelf__": {
     "feature": true,
-    "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/hitbox.html#has-offset",
+    "documentation": "https://docs.mcbookshelf.dev/en/latest/modules/hitbox.html#blocks",
     "authors": [
       "Aksiome"
     ],
@@ -10,20 +10,23 @@
       "minecraft_version": "1.21"
     },
     "updated": {
-      "date": "2024/10/24",
-      "minecraft_version": "1.21.2"
+      "date": "2025/03/10",
+      "minecraft_version": "1.21.4"
     }
   },
+  "replace": true,
   "values": [
     "minecraft:allium",
     "minecraft:azure_bluet",
     "minecraft:bamboo",
     "minecraft:bamboo_sapling",
     "minecraft:blue_orchid",
+    "minecraft:closed_eyeblossom",
     "minecraft:cornflower",
     "minecraft:dandelion",
     "minecraft:lily_of_the_valley",
     "minecraft:mangrove_propagule",
+    "minecraft:open_eyeblossom",
     "minecraft:orange_tulip",
     "minecraft:oxeye_daisy",
     "minecraft:pink_tulip",

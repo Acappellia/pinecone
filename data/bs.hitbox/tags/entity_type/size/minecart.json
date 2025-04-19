@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "minecraft:chest_minecart",
     "minecraft:command_block_minecart",

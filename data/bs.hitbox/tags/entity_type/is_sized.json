@@ -1,7 +1,7 @@
 {
   "__bookshelf__": {
     "feature": true,
-    "documentation": "https://bookshelf.docs.gunivers.net/en/latest/modules/hitbox.html#is-sized",
+    "documentation": "https://docs.mcbookshelf.dev/en/latest/modules/hitbox.html#entities",
     "authors": [
       "Aksiome"
     ],
@@ -14,6 +14,7 @@
       "minecraft_version": "1.21.2"
     }
   },
+  "replace": true,
   "values": [
     "#bs.hitbox:size/arrow_like",
     "#bs.hitbox:size/bat_like",
@@ -44,6 +45,7 @@
     "minecraft:cave_spider",
     "minecraft:chicken",
     "minecraft:cod",
+    "minecraft:creaking",
     "minecraft:creeper",
     "minecraft:dolphin",
     "minecraft:donkey",

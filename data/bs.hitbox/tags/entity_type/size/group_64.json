@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "minecraft:wither_skeleton",
     "minecraft:breeze",
@@ -8,10 +9,6 @@
     "minecraft:goat",
     "minecraft:villager",
     "minecraft:armadillo",
-    "minecraft:creaking",
-    {
-      "id": "minecraft:creaking_transient",
-      "required": false
-    }
+    "minecraft:creaking"
   ]
 }

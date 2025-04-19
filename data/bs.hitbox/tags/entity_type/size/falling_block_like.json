@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "minecraft:falling_block",
     "minecraft:tnt"

@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "minecraft:iron_golem",
     "#bs.hitbox:size/item_like",

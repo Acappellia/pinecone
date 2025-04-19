@@ -1,4 +1,5 @@
 {
+  "replace": true,
   "values": [
     "#bs.hitbox:size/arrow_like",
     "minecraft:axolotl",
