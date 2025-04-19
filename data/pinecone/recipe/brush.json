@@ -43,7 +43,7 @@
         "id": "leather_horse_armor",
         "count": 1,
         "components": {
-            "item_name": "\"颜料刷\"",
+            "item_name": "颜料刷",
             "custom_data": {
                 "pinecone_brush": 1
             },
@@ -53,9 +53,10 @@
                 "consume_seconds": 1000000,
                 "has_consume_particles": false
             },
-            "attribute_modifiers": {
-                "modifiers": [],
-                "show_in_tooltip": false
+            "tooltip_display":{
+                "hidden_components":[
+                    "attribute_modifiers"
+                ]
             },
             "lore": [
                 "[{\"text\":\"手持时：\",\"color\":\"gray\",\"italic\":false}]",

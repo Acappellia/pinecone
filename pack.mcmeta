@@ -1,9 +1,9 @@
 {
     "pack": {
-        "pack_format": 61,
+        "pack_format": 71,
         "supported_formats": [
-            46,
-            61
+            55,
+            71
         ],
         "description": [
             {
