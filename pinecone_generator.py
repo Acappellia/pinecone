@@ -187,6 +187,22 @@ for row in csv_rows:
         #add recipe to advancement
         advancement_json['rewards']['recipes'].append(furniture_full_id)
 
+        #create recipe for creative mode
+        recipe_json = RECIPE_CUT
+        recipe_json['ingredient'] = "minecraft:bedrock"
+        if row[19] != '':
+            recipe_json['result']['id'] = row[19]
+        recipe_json['result']['components']['minecraft:item_name'] = row[1]
+        recipe_json['result']['components']['minecraft:item_model'] = furniture_full_id
+        if row[17] == '1':
+            recipe_json['result']['components']['consumable'] = {}
+            recipe_json['result']['components']['food'] = {'can_always_eat': True, 'nutrition': round(float(row[18])), 'saturation': float(row[18])}
+        with open(DP_RECIPE_LOC + furniture_id +'_creative.json','w', encoding='utf-8') as file:
+            file.write(json.dumps(recipe_json,indent=2,ensure_ascii=False))
+        
+        #add recipe to advancement
+        advancement_json['rewards']['recipes'].append(furniture_full_id + '_creative')
+
     #add furniture init data
     init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '" set value {\\\n'
 
