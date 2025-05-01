@@ -1,7 +1,7 @@
 # All files should be put in the /models_to_add/ directory
 # Run this script with -i <new_pack_name>
 
-import csv, json, os, shutil, re, zipfile
+import csv, json, os, shutil, re, zipfile, copy
 
 #read args
 ABS_PATH = os.path.abspath('.')
@@ -165,14 +165,14 @@ for row in csv_rows:
     furniture_full_id = pack_name + ':' + furniture_id
     
     #create item model
-    model_json = ITEM_MODEL
+    model_json = copy.deepcopy(ITEM_MODEL)
     model_json['model']['model'] = pack_name +':pinecone/' + furniture_id
     with open(MODEL_FILE_LOC + furniture_id +'.json','w', encoding='utf-8') as file:
         file.write(json.dumps(model_json,indent=2))
     
     #create recipe
     if row[2] != '':
-        recipe_json = RECIPE_CUT
+        recipe_json = copy.deepcopy(RECIPE_CUT)
         recipe_json['ingredient'] = row[2]
         if row[19] != '':
             recipe_json['result']['id'] = row[19]
@@ -188,7 +188,7 @@ for row in csv_rows:
         advancement_json['rewards']['recipes'].append(furniture_full_id)
 
         #create recipe for creative mode
-        recipe_json = RECIPE_CUT
+        recipe_json = copy.deepcopy(RECIPE_CUT)
         recipe_json['ingredient'] = "minecraft:bedrock"
         if row[19] != '':
             recipe_json['result']['id'] = row[19]
@@ -202,6 +202,8 @@ for row in csv_rows:
         
         #add recipe to advancement
         advancement_json['rewards']['recipes'].append(furniture_full_id + '_creative')
+
+        print(RECIPE_CUT['result']['components'])
 
     #add furniture init data
     init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '" set value {\\\n'
