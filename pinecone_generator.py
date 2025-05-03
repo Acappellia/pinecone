@@ -203,7 +203,7 @@ for row in csv_rows:
         #add recipe to advancement
         advancement_json['rewards']['recipes'].append(furniture_full_id + '_creative')
 
-        print(RECIPE_CUT['result']['components'])
+        #print(RECIPE_CUT['result']['components'])
 
     #add furniture init data
     init_command = 'data modify storage pinecone:fur_data "' + furniture_full_id + '" set value {\\\n'
