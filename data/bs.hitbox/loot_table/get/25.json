@@ -18,7 +18,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -62,7 +62,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -84,7 +84,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]]}"
                         }
                       ]
                     }
@@ -111,7 +111,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -133,7 +133,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -155,7 +155,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -177,7 +177,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,13.0d,0.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ]
                     }
@@ -209,7 +209,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,13.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -253,7 +253,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"interaction_shape\":[[13.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -275,7 +275,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,3.0d,16.0d,16.0d]]}"
                         }
                       ]
                     }
@@ -302,7 +302,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -324,7 +324,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -346,7 +346,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
                         }
                       ],
                       "conditions": [
@@ -368,7 +368,7 @@
                       "functions": [
                         {
                           "function": "set_custom_data",
-                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
+                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,3.0d,16.0d]]}"
                         }
                       ]
                     }

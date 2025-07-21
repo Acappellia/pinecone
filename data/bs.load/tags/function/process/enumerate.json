@@ -1,7 +1,6 @@
 {
   "values": [
-    "bs.load:v3.0.0/enumerate/hitbox",
-    "bs.load:v3.0.0/enumerate/load",
-    "bs.load:v3.0.0/enumerate/raycast"
+    "bs.load:v3.1.0/enumerate/hitbox",
+    "bs.load:v3.1.0/enumerate/load"
   ]
 }

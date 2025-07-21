@@ -2695,7 +2695,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,15.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,15.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,15.0d,16.0d]]}"
                                         }
                                       ]
                                     }
@@ -3932,7 +3932,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,14.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,14.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -3994,7 +3994,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,2.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,2.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,2.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,2.0d,16.0d]]}"
                                         }
                                       ]
                                     }
@@ -4383,7 +4383,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[1.0d,0.0d,1.0d,15.0d,1.5d,15.0d]],\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,1.5d,15.0d]]}"
+                                          "tag": "{\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,1.5d,15.0d]],\"interaction_shape\":[[1.0d,0.0d,1.0d,15.0d,1.5d,15.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -4667,7 +4667,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,12.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,12.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,12.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,12.0d,16.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -4796,7 +4796,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[1.0d,0.0d,1.0d,15.0d,16.0d,15.0d]],\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,16.0d,15.0d]]}"
+                                          "tag": "{\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,16.0d,15.0d]],\"interaction_shape\":[[1.0d,0.0d,1.0d,15.0d,16.0d,15.0d]]}"
                                         }
                                       ]
                                     }
@@ -5776,15 +5776,37 @@
                               "type": "alternatives",
                               "children": [
                                 {
-                                  "type": "loot_table",
-                                  "value": "bs.hitbox:get/38",
+                                  "type": "alternatives",
+                                  "children": [
+                                    {
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/38",
+                                      "conditions": [
+                                        {
+                                          "condition": "location_check",
+                                          "predicate": {
+                                            "block": {
+                                              "blocks": [
+                                                "tripwire_hook"
+                                              ]
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/39"
+                                    }
+                                  ],
                                   "conditions": [
                                     {
                                       "condition": "location_check",
                                       "predicate": {
                                         "block": {
                                           "blocks": [
-                                            "tripwire_hook"
+                                            "tripwire_hook",
+                                            "tripwire"
                                           ]
                                         }
                                       }
@@ -5795,22 +5817,6 @@
                                   "type": "alternatives",
                                   "children": [
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/39",
-                                      "conditions": [
-                                        {
-                                          "condition": "location_check",
-                                          "predicate": {
-                                            "block": {
-                                              "blocks": [
-                                                "tripwire"
-                                              ]
-                                            }
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
                                       "type": "item",
                                       "name": "egg",
                                       "functions": [
@@ -5818,7 +5824,60 @@
                                           "function": "set_custom_data",
                                           "tag": "{\"collision_shape\":[[5.0d,0.0d,5.0d,11.0d,6.0d,11.0d]],\"interaction_shape\":[[5.0d,0.0d,5.0d,11.0d,6.0d,11.0d]]}"
                                         }
+                                      ],
+                                      "conditions": [
+                                        {
+                                          "condition": "location_check",
+                                          "predicate": {
+                                            "block": {
+                                              "blocks": [
+                                                "flower_pot",
+                                                "potted_torchflower",
+                                                "potted_oak_sapling",
+                                                "potted_spruce_sapling",
+                                                "potted_birch_sapling",
+                                                "potted_jungle_sapling",
+                                                "potted_acacia_sapling",
+                                                "potted_cherry_sapling",
+                                                "potted_dark_oak_sapling",
+                                                "potted_pale_oak_sapling",
+                                                "potted_mangrove_propagule",
+                                                "potted_fern",
+                                                "potted_dandelion",
+                                                "potted_poppy",
+                                                "potted_blue_orchid",
+                                                "potted_allium",
+                                                "potted_azure_bluet",
+                                                "potted_red_tulip",
+                                                "potted_orange_tulip",
+                                                "potted_white_tulip",
+                                                "potted_pink_tulip",
+                                                "potted_oxeye_daisy",
+                                                "potted_cornflower",
+                                                "potted_lily_of_the_valley",
+                                                "potted_wither_rose",
+                                                "potted_red_mushroom",
+                                                "potted_brown_mushroom",
+                                                "potted_dead_bush",
+                                                "potted_cactus",
+                                                "potted_bamboo",
+                                                "potted_crimson_fungus",
+                                                "potted_warped_fungus",
+                                                "potted_crimson_roots",
+                                                "potted_warped_roots",
+                                                "potted_azalea_bush",
+                                                "potted_flowering_azalea_bush",
+                                                "potted_open_eyeblossom",
+                                                "potted_closed_eyeblossom"
+                                              ]
+                                            }
+                                          }
+                                        }
                                       ]
+                                    },
+                                    {
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/40"
                                     }
                                   ]
                                 }
@@ -5868,7 +5927,9 @@
                                         "potted_azalea_bush",
                                         "potted_flowering_azalea_bush",
                                         "potted_open_eyeblossom",
-                                        "potted_closed_eyeblossom"
+                                        "potted_closed_eyeblossom",
+                                        "carrots",
+                                        "potatoes"
                                       ]
                                     }
                                   }
@@ -5882,16 +5943,27 @@
                                   "type": "alternatives",
                                   "children": [
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/40",
+                                      "type": "item",
+                                      "name": "egg",
+                                      "functions": [
+                                        {
+                                          "function": "set_custom_data",
+                                          "tag": "{\"collision_shape\":[[4.0d,0.0d,4.0d,12.0d,8.0d,12.0d]],\"interaction_shape\":[[4.0d,0.0d,4.0d,12.0d,8.0d,12.0d]]}"
+                                        }
+                                      ],
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "carrots",
-                                                "potatoes"
+                                                "skeleton_skull",
+                                                "wither_skeleton_skull",
+                                                "zombie_head",
+                                                "player_head",
+                                                "creeper_head",
+                                                "dragon_head",
+                                                "heavy_core"
                                               ]
                                             }
                                           }
@@ -5899,14 +5971,8 @@
                                       ]
                                     },
                                     {
-                                      "type": "item",
-                                      "name": "egg",
-                                      "functions": [
-                                        {
-                                          "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[4.0d,0.0d,4.0d,12.0d,8.0d,12.0d]],\"collision_shape\":[[4.0d,0.0d,4.0d,12.0d,8.0d,12.0d]]}"
-                                        }
-                                      ]
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/41"
                                     }
                                   ],
                                   "conditions": [
@@ -5915,15 +5981,19 @@
                                       "predicate": {
                                         "block": {
                                           "blocks": [
-                                            "carrots",
-                                            "potatoes",
                                             "skeleton_skull",
                                             "wither_skeleton_skull",
                                             "zombie_head",
                                             "player_head",
                                             "creeper_head",
                                             "dragon_head",
-                                            "heavy_core"
+                                            "heavy_core",
+                                            "skeleton_wall_skull",
+                                            "wither_skeleton_wall_skull",
+                                            "zombie_wall_head",
+                                            "player_wall_head",
+                                            "creeper_wall_head",
+                                            "dragon_wall_head"
                                           ]
                                         }
                                       }
@@ -5934,27 +6004,6 @@
                                   "type": "alternatives",
                                   "children": [
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/41",
-                                      "conditions": [
-                                        {
-                                          "condition": "location_check",
-                                          "predicate": {
-                                            "block": {
-                                              "blocks": [
-                                                "skeleton_wall_skull",
-                                                "wither_skeleton_wall_skull",
-                                                "zombie_wall_head",
-                                                "player_wall_head",
-                                                "creeper_wall_head",
-                                                "dragon_wall_head"
-                                              ]
-                                            }
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
                                       "type": "item",
                                       "name": "egg",
                                       "functions": [
@@ -5962,7 +6011,23 @@
                                           "function": "set_custom_data",
                                           "tag": "{\"collision_shape\":[[3.0d,0.0d,3.0d,13.0d,8.0d,13.0d]],\"interaction_shape\":[[3.0d,0.0d,3.0d,13.0d,8.0d,13.0d]]}"
                                         }
+                                      ],
+                                      "conditions": [
+                                        {
+                                          "condition": "location_check",
+                                          "predicate": {
+                                            "block": {
+                                              "blocks": [
+                                                "piglin_head"
+                                              ]
+                                            }
+                                          }
+                                        }
                                       ]
+                                    },
+                                    {
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/42"
                                     }
                                   ]
                                 }
@@ -6030,7 +6095,8 @@
                                     "player_wall_head",
                                     "creeper_wall_head",
                                     "dragon_wall_head",
-                                    "piglin_head"
+                                    "piglin_head",
+                                    "piglin_wall_head"
                                   ]
                                 }
                               }
@@ -6048,14 +6114,16 @@
                                   "children": [
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/42",
+                                      "value": "bs.hitbox:get/43",
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "piglin_wall_head"
+                                                "anvil",
+                                                "chipped_anvil",
+                                                "damaged_anvil"
                                               ]
                                             }
                                           }
@@ -6064,7 +6132,7 @@
                                     },
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/43"
+                                      "value": "bs.hitbox:get/44"
                                     }
                                   ],
                                   "conditions": [
@@ -6073,10 +6141,11 @@
                                       "predicate": {
                                         "block": {
                                           "blocks": [
-                                            "piglin_wall_head",
                                             "anvil",
                                             "chipped_anvil",
-                                            "damaged_anvil"
+                                            "damaged_anvil",
+                                            "light_weighted_pressure_plate",
+                                            "heavy_weighted_pressure_plate"
                                           ]
                                         }
                                       }
@@ -6087,23 +6156,6 @@
                                   "type": "alternatives",
                                   "children": [
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/44",
-                                      "conditions": [
-                                        {
-                                          "condition": "location_check",
-                                          "predicate": {
-                                            "block": {
-                                              "blocks": [
-                                                "light_weighted_pressure_plate",
-                                                "heavy_weighted_pressure_plate"
-                                              ]
-                                            }
-                                          }
-                                        }
-                                      ]
-                                    },
-                                    {
                                       "type": "item",
                                       "name": "egg",
                                       "functions": [
@@ -6111,7 +6163,23 @@
                                           "function": "set_custom_data",
                                           "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,6.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,6.0d,16.0d]]}"
                                         }
+                                      ],
+                                      "conditions": [
+                                        {
+                                          "condition": "location_check",
+                                          "predicate": {
+                                            "block": {
+                                              "blocks": [
+                                                "daylight_detector"
+                                              ]
+                                            }
+                                          }
+                                        }
                                       ]
+                                    },
+                                    {
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/45"
                                     }
                                   ]
                                 }
@@ -6122,13 +6190,13 @@
                                   "predicate": {
                                     "block": {
                                       "blocks": [
-                                        "piglin_wall_head",
                                         "anvil",
                                         "chipped_anvil",
                                         "damaged_anvil",
                                         "light_weighted_pressure_plate",
                                         "heavy_weighted_pressure_plate",
-                                        "daylight_detector"
+                                        "daylight_detector",
+                                        "hopper"
                                       ]
                                     }
                                   }
@@ -6142,15 +6210,37 @@
                                   "type": "alternatives",
                                   "children": [
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/45",
+                                      "type": "item",
+                                      "name": "egg",
+                                      "functions": [
+                                        {
+                                          "function": "set_custom_data",
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,1.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,1.0d,16.0d]]}"
+                                        }
+                                      ],
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "hopper"
+                                                "white_carpet",
+                                                "orange_carpet",
+                                                "magenta_carpet",
+                                                "light_blue_carpet",
+                                                "yellow_carpet",
+                                                "lime_carpet",
+                                                "pink_carpet",
+                                                "gray_carpet",
+                                                "light_gray_carpet",
+                                                "cyan_carpet",
+                                                "purple_carpet",
+                                                "blue_carpet",
+                                                "brown_carpet",
+                                                "green_carpet",
+                                                "red_carpet",
+                                                "black_carpet",
+                                                "moss_carpet"
                                               ]
                                             }
                                           }
@@ -6158,14 +6248,8 @@
                                       ]
                                     },
                                     {
-                                      "type": "item",
-                                      "name": "egg",
-                                      "functions": [
-                                        {
-                                          "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,1.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,1.0d,16.0d]]}"
-                                        }
-                                      ]
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/46"
                                     }
                                   ],
                                   "conditions": [
@@ -6174,7 +6258,6 @@
                                       "predicate": {
                                         "block": {
                                           "blocks": [
-                                            "hopper",
                                             "white_carpet",
                                             "orange_carpet",
                                             "magenta_carpet",
@@ -6191,7 +6274,23 @@
                                             "green_carpet",
                                             "red_carpet",
                                             "black_carpet",
-                                            "moss_carpet"
+                                            "moss_carpet",
+                                            "white_wall_banner",
+                                            "orange_wall_banner",
+                                            "magenta_wall_banner",
+                                            "light_blue_wall_banner",
+                                            "yellow_wall_banner",
+                                            "lime_wall_banner",
+                                            "pink_wall_banner",
+                                            "gray_wall_banner",
+                                            "light_gray_wall_banner",
+                                            "cyan_wall_banner",
+                                            "purple_wall_banner",
+                                            "blue_wall_banner",
+                                            "brown_wall_banner",
+                                            "green_wall_banner",
+                                            "red_wall_banner",
+                                            "black_wall_banner"
                                           ]
                                         }
                                       }
@@ -6203,29 +6302,15 @@
                                   "children": [
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/46",
+                                      "value": "bs.hitbox:get/47",
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "white_wall_banner",
-                                                "orange_wall_banner",
-                                                "magenta_wall_banner",
-                                                "light_blue_wall_banner",
-                                                "yellow_wall_banner",
-                                                "lime_wall_banner",
-                                                "pink_wall_banner",
-                                                "gray_wall_banner",
-                                                "light_gray_wall_banner",
-                                                "cyan_wall_banner",
-                                                "purple_wall_banner",
-                                                "blue_wall_banner",
-                                                "brown_wall_banner",
-                                                "green_wall_banner",
-                                                "red_wall_banner",
-                                                "black_wall_banner"
+                                                "end_rod",
+                                                "lightning_rod"
                                               ]
                                             }
                                           }
@@ -6234,7 +6319,7 @@
                                     },
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/47"
+                                      "value": "bs.hitbox:get/48"
                                     }
                                   ]
                                 }
@@ -6347,7 +6432,8 @@
                                 "red_wall_banner",
                                 "black_wall_banner",
                                 "end_rod",
-                                "lightning_rod"
+                                "lightning_rod",
+                                "chorus_plant"
                               ]
                             }
                           }
@@ -6368,14 +6454,14 @@
                                   "children": [
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/48",
+                                      "value": "bs.hitbox:get/49",
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "chorus_plant"
+                                                "torchflower_crop"
                                               ]
                                             }
                                           }
@@ -6384,7 +6470,7 @@
                                     },
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/49"
+                                      "value": "bs.hitbox:get/50"
                                     }
                                   ],
                                   "conditions": [
@@ -6393,8 +6479,8 @@
                                       "predicate": {
                                         "block": {
                                           "blocks": [
-                                            "chorus_plant",
-                                            "torchflower_crop"
+                                            "torchflower_crop",
+                                            "pitcher_crop"
                                           ]
                                         }
                                       }
@@ -6406,14 +6492,14 @@
                                   "children": [
                                     {
                                       "type": "loot_table",
-                                      "value": "bs.hitbox:get/50",
+                                      "value": "bs.hitbox:get/51",
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "pitcher_crop"
+                                                "beetroots"
                                               ]
                                             }
                                           }
@@ -6421,8 +6507,14 @@
                                       ]
                                     },
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/51"
+                                      "type": "item",
+                                      "name": "egg",
+                                      "functions": [
+                                        {
+                                          "function": "set_custom_data",
+                                          "tag": "{\"interaction_shape\":[[5.0d,5.0d,5.0d,11.0d,11.0d,11.0d]]}"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -6433,10 +6525,10 @@
                                   "predicate": {
                                     "block": {
                                       "blocks": [
-                                        "chorus_plant",
                                         "torchflower_crop",
                                         "pitcher_crop",
-                                        "beetroots"
+                                        "beetroots",
+                                        "structure_void"
                                       ]
                                     }
                                   }
@@ -6455,7 +6547,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[5.0d,5.0d,5.0d,11.0d,11.0d,11.0d]]}"
+                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,9.0d,16.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -6464,7 +6556,7 @@
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "structure_void"
+                                                "kelp"
                                               ]
                                             }
                                           }
@@ -6472,14 +6564,8 @@
                                       ]
                                     },
                                     {
-                                      "type": "item",
-                                      "name": "egg",
-                                      "functions": [
-                                        {
-                                          "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,9.0d,16.0d]]}"
-                                        }
-                                      ]
+                                      "type": "loot_table",
+                                      "value": "bs.hitbox:get/52"
                                     }
                                   ],
                                   "conditions": [
@@ -6488,8 +6574,8 @@
                                       "predicate": {
                                         "block": {
                                           "blocks": [
-                                            "structure_void",
-                                            "kelp"
+                                            "kelp",
+                                            "turtle_egg"
                                           ]
                                         }
                                       }
@@ -6500,15 +6586,21 @@
                                   "type": "alternatives",
                                   "children": [
                                     {
-                                      "type": "loot_table",
-                                      "value": "bs.hitbox:get/52",
+                                      "type": "item",
+                                      "name": "egg",
+                                      "functions": [
+                                        {
+                                          "function": "set_custom_data",
+                                          "tag": "{\"collision_shape\":[[1.0d,0.0d,2.0d,15.0d,16.0d,14.0d]],\"interaction_shape\":[[1.0d,0.0d,2.0d,15.0d,16.0d,14.0d]]}"
+                                        }
+                                      ],
                                       "conditions": [
                                         {
                                           "condition": "location_check",
                                           "predicate": {
                                             "block": {
                                               "blocks": [
-                                                "turtle_egg"
+                                                "sniffer_egg"
                                               ]
                                             }
                                           }
@@ -6521,7 +6613,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[1.0d,0.0d,2.0d,15.0d,16.0d,14.0d]],\"collision_shape\":[[1.0d,0.0d,2.0d,15.0d,16.0d,14.0d]]}"
+                                          "tag": "{\"collision_shape\":[[3.0d,0.0d,3.0d,13.0d,10.0d,13.0d]],\"interaction_shape\":[[3.0d,0.0d,3.0d,13.0d,10.0d,13.0d]]}"
                                         }
                                       ]
                                     }
@@ -6536,14 +6628,14 @@
                               "predicate": {
                                 "block": {
                                   "blocks": [
-                                    "chorus_plant",
                                     "torchflower_crop",
                                     "pitcher_crop",
                                     "beetroots",
                                     "structure_void",
                                     "kelp",
                                     "turtle_egg",
-                                    "sniffer_egg"
+                                    "sniffer_egg",
+                                    "dried_ghast"
                                   ]
                                 }
                               }
@@ -6723,7 +6815,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[5.0d,5.0d,5.0d,11.0d,11.0d,11.0d]],\"collision_shape\":[[5.0d,5.0d,5.0d,11.0d,11.0d,11.0d]]}"
+                                          "tag": "{\"collision_shape\":[[5.0d,5.0d,5.0d,11.0d,11.0d,11.0d]],\"interaction_shape\":[[5.0d,5.0d,5.0d,11.0d,11.0d,11.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -6909,6 +7001,7 @@
                             "kelp",
                             "turtle_egg",
                             "sniffer_egg",
+                            "dried_ghast",
                             "dead_tube_coral",
                             "dead_brain_coral",
                             "dead_bubble_coral",
@@ -7009,7 +7102,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,9.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,9.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,9.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,9.0d,16.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -7077,7 +7170,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,7.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,7.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,7.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,7.0d,16.0d]]}"
                                         }
                                       ]
                                     }
@@ -7271,7 +7364,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,15.0d,15.0d]]}"
+                                          "tag": "{\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,15.0d,15.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -7331,7 +7424,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[1.0d,0.0d,1.0d,15.0d,8.0d,15.0d],[7.0d,8.0d,7.0d,9.0d,14.0d,9.0d]],\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,8.0d,15.0d],[7.0d,8.0d,7.0d,9.0d,14.0d,9.0d]]}"
+                                          "tag": "{\"collision_shape\":[[1.0d,0.0d,1.0d,15.0d,8.0d,15.0d],[7.0d,8.0d,7.0d,9.0d,14.0d,9.0d]],\"interaction_shape\":[[1.0d,0.0d,1.0d,15.0d,8.0d,15.0d],[7.0d,8.0d,7.0d,9.0d,14.0d,9.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -7545,7 +7638,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]],\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,8.0d,16.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,0.0d,0.0d,16.0d,8.0d,16.0d]],\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                         }
                                       ],
                                       "conditions": [
@@ -7611,7 +7704,7 @@
                                       "functions": [
                                         {
                                           "function": "set_custom_data",
-                                          "tag": "{\"interaction_shape\":[[0.0d,8.0d,0.0d,16.0d,16.0d,16.0d],[6.0d,0.0d,6.0d,10.0d,16.0d,10.0d]],\"collision_shape\":[[0.0d,8.0d,0.0d,16.0d,16.0d,16.0d],[6.0d,0.0d,6.0d,10.0d,16.0d,10.0d]]}"
+                                          "tag": "{\"collision_shape\":[[0.0d,8.0d,0.0d,16.0d,16.0d,16.0d],[6.0d,0.0d,6.0d,10.0d,16.0d,10.0d]],\"interaction_shape\":[[0.0d,8.0d,0.0d,16.0d,16.0d,16.0d],[6.0d,0.0d,6.0d,10.0d,16.0d,10.0d]]}"
                                         }
                                       ]
                                     }

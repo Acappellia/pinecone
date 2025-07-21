@@ -15,7 +15,7 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,9.0d,11.0d,15.0d,15.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,9.0d,11.0d,15.0d,15.0d]]}"
                     }
                   ],
                   "conditions": [
@@ -24,7 +24,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "north"
+                            "tilt": "none"
                           }
                         }
                       }
@@ -37,7 +37,7 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,1.0d,11.0d,15.0d,7.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,9.0d,11.0d,15.0d,15.0d]]}"
                     }
                   ],
                   "conditions": [
@@ -46,155 +46,13 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "south"
+                            "tilt": "unstable"
                           }
                         }
                       }
                     }
                   ]
                 },
-                {
-                  "type": "item",
-                  "name": "egg",
-                  "functions": [
-                    {
-                      "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[9.0d,0.0d,5.0d,15.0d,15.0d,11.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "facing": "west"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "name": "egg",
-                  "functions": [
-                    {
-                      "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[1.0d,0.0d,5.0d,7.0d,15.0d,11.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
-                    }
-                  ]
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "location_check",
-                  "predicate": {
-                    "block": {
-                      "state": {
-                        "tilt": "none"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "alternatives",
-              "children": [
-                {
-                  "type": "item",
-                  "name": "egg",
-                  "functions": [
-                    {
-                      "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,9.0d,11.0d,15.0d,15.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "facing": "north"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "name": "egg",
-                  "functions": [
-                    {
-                      "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,1.0d,11.0d,15.0d,7.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "facing": "south"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "name": "egg",
-                  "functions": [
-                    {
-                      "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[9.0d,0.0d,5.0d,15.0d,15.0d,11.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "facing": "west"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "item",
-                  "name": "egg",
-                  "functions": [
-                    {
-                      "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[1.0d,0.0d,5.0d,7.0d,15.0d,11.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]]}"
-                    }
-                  ]
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "location_check",
-                  "predicate": {
-                    "block": {
-                      "state": {
-                        "tilt": "unstable"
-                      }
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "alternatives",
-              "children": [
                 {
                   "type": "item",
                   "name": "egg",
@@ -210,7 +68,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "north"
+                            "tilt": "partial"
                           }
                         }
                       }
@@ -223,7 +81,34 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d],[5.0d,0.0d,1.0d,11.0d,13.0d,7.0d]],\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d]]}"
+                      "tag": "{\"interaction_shape\":[[5.0d,0.0d,9.0d,11.0d,13.0d,15.0d]]}"
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "location_check",
+                  "predicate": {
+                    "block": {
+                      "state": {
+                        "facing": "north"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "alternatives",
+              "children": [
+                {
+                  "type": "item",
+                  "name": "egg",
+                  "functions": [
+                    {
+                      "function": "set_custom_data",
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,1.0d,11.0d,15.0d,7.0d]]}"
                     }
                   ],
                   "conditions": [
@@ -232,7 +117,122 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "south"
+                            "tilt": "none"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "egg",
+                  "functions": [
+                    {
+                      "function": "set_custom_data",
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[5.0d,0.0d,1.0d,11.0d,15.0d,7.0d]]}"
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "tilt": "unstable"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "egg",
+                  "functions": [
+                    {
+                      "function": "set_custom_data",
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d],[5.0d,0.0d,1.0d,11.0d,13.0d,7.0d]]}"
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "tilt": "partial"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "egg",
+                  "functions": [
+                    {
+                      "function": "set_custom_data",
+                      "tag": "{\"interaction_shape\":[[5.0d,0.0d,1.0d,11.0d,13.0d,7.0d]]}"
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "location_check",
+                  "predicate": {
+                    "block": {
+                      "state": {
+                        "facing": "south"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "alternatives",
+              "children": [
+                {
+                  "type": "item",
+                  "name": "egg",
+                  "functions": [
+                    {
+                      "function": "set_custom_data",
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[9.0d,0.0d,5.0d,15.0d,15.0d,11.0d]]}"
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "tilt": "none"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "egg",
+                  "functions": [
+                    {
+                      "function": "set_custom_data",
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[9.0d,0.0d,5.0d,15.0d,15.0d,11.0d]]}"
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "tilt": "unstable"
                           }
                         }
                       }
@@ -254,7 +254,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "west"
+                            "tilt": "partial"
                           }
                         }
                       }
@@ -267,7 +267,7 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d],[1.0d,0.0d,5.0d,7.0d,13.0d,11.0d]]}"
+                      "tag": "{\"interaction_shape\":[[9.0d,0.0d,5.0d,15.0d,13.0d,11.0d]]}"
                     }
                   ]
                 }
@@ -278,7 +278,7 @@
                   "predicate": {
                     "block": {
                       "state": {
-                        "tilt": "partial"
+                        "facing": "west"
                       }
                     }
                   }
@@ -294,7 +294,7 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[5.0d,0.0d,9.0d,11.0d,13.0d,15.0d]]}"
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[1.0d,0.0d,5.0d,7.0d,15.0d,11.0d]]}"
                     }
                   ],
                   "conditions": [
@@ -303,7 +303,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "north"
+                            "tilt": "none"
                           }
                         }
                       }
@@ -316,7 +316,7 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[5.0d,0.0d,1.0d,11.0d,13.0d,7.0d]]}"
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,15.0d,16.0d],[1.0d,0.0d,5.0d,7.0d,15.0d,11.0d]]}"
                     }
                   ],
                   "conditions": [
@@ -325,7 +325,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "south"
+                            "tilt": "unstable"
                           }
                         }
                       }
@@ -338,7 +338,7 @@
                   "functions": [
                     {
                       "function": "set_custom_data",
-                      "tag": "{\"interaction_shape\":[[9.0d,0.0d,5.0d,15.0d,13.0d,11.0d]]}"
+                      "tag": "{\"collision_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d]],\"interaction_shape\":[[0.0d,11.0d,0.0d,16.0d,13.0d,16.0d],[1.0d,0.0d,5.0d,7.0d,13.0d,11.0d]]}"
                     }
                   ],
                   "conditions": [
@@ -347,7 +347,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "facing": "west"
+                            "tilt": "partial"
                           }
                         }
                       }

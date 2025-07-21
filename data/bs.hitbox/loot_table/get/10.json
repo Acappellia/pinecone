@@ -76,160 +76,13 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "up"
+                                "south": "up"
                               }
                             }
                           }
                         }
                       ]
                     },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "side"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "south": "up"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "alternatives",
-                  "children": [
                     {
                       "type": "alternatives",
                       "children": [
@@ -294,7 +147,154 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "up"
+                                "south": "side"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "north": "up"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "up"
                               }
                             }
                           }
@@ -365,154 +365,7 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "side"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "south": "side"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "alternatives",
-                  "children": [
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "up"
+                                "south": "side"
                               }
                             }
                           }
@@ -576,6 +429,82 @@
                             }
                           ]
                         }
+                      ]
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "north": "side"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ]
+                        }
                       ],
                       "conditions": [
                         {
@@ -583,7 +512,78 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "side"
+                                "south": "up"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[15.0d,1.0d,3.0d,16.0d,16.0d,13.0d]]}"
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "side"
                               }
                             }
                           }
@@ -735,160 +735,13 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "up"
+                                "south": "up"
                               }
                             }
                           }
                         }
                       ]
                     },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "side"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "south": "up"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "alternatives",
-                  "children": [
                     {
                       "type": "alternatives",
                       "children": [
@@ -953,7 +806,154 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "up"
+                                "south": "side"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d]]}"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "north": "up"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d]]}"
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "up"
                               }
                             }
                           }
@@ -1024,154 +1024,7 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "side"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "south": "side"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "alternatives",
-                  "children": [
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d],[13.0d,0.0d,3.0d,16.0d,1.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "up"
+                                "south": "side"
                               }
                             }
                           }
@@ -1235,6 +1088,82 @@
                             }
                           ]
                         }
+                      ]
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "north": "side"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ]
+                        }
                       ],
                       "conditions": [
                         {
@@ -1242,7 +1171,78 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "side"
+                                "south": "up"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,16.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "side"
                               }
                             }
                           }
@@ -1394,160 +1394,13 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "up"
+                                "south": "up"
                               }
                             }
                           }
                         }
                       ]
                     },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "side"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "south": "up"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "alternatives",
-                  "children": [
                     {
                       "type": "alternatives",
                       "children": [
@@ -1612,7 +1465,154 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "up"
+                                "south": "side"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "north": "up"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "up"
                               }
                             }
                           }
@@ -1683,154 +1683,7 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "side"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,13.0d,1.0d,16.0d]]}"
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ],
-                  "conditions": [
-                    {
-                      "condition": "location_check",
-                      "predicate": {
-                        "block": {
-                          "state": {
-                            "south": "side"
-                          }
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "alternatives",
-                  "children": [
-                    {
-                      "type": "alternatives",
-                      "children": [
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "up"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
-                            }
-                          ],
-                          "conditions": [
-                            {
-                              "condition": "location_check",
-                              "predicate": {
-                                "block": {
-                                  "state": {
-                                    "west": "side"
-                                  }
-                                }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "type": "item",
-                          "name": "egg",
-                          "functions": [
-                            {
-                              "function": "set_custom_data",
-                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,0.0d,13.0d,16.0d,1.0d],[3.0d,0.0d,1.0d,13.0d,1.0d,13.0d]]}"
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "up"
+                                "south": "side"
                               }
                             }
                           }
@@ -1894,6 +1747,82 @@
                             }
                           ]
                         }
+                      ]
+                    }
+                  ],
+                  "conditions": [
+                    {
+                      "condition": "location_check",
+                      "predicate": {
+                        "block": {
+                          "state": {
+                            "north": "side"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "alternatives",
+                  "children": [
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,13.0d,1.0d,16.0d],[3.0d,1.0d,15.0d,13.0d,16.0d,16.0d]]}"
+                            }
+                          ]
+                        }
                       ],
                       "conditions": [
                         {
@@ -1901,7 +1830,78 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "side"
+                                "south": "up"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,1.0d,16.0d,13.0d],[1.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "up"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[0.0d,0.0d,3.0d,13.0d,1.0d,13.0d],[3.0d,0.0d,13.0d,13.0d,1.0d,16.0d]]}"
+                            }
+                          ],
+                          "conditions": [
+                            {
+                              "condition": "location_check",
+                              "predicate": {
+                                "block": {
+                                  "state": {
+                                    "west": "side"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "item",
+                          "name": "egg",
+                          "functions": [
+                            {
+                              "function": "set_custom_data",
+                              "tag": "{\"interaction_shape\":[[3.0d,0.0d,3.0d,13.0d,1.0d,16.0d]]}"
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "side"
                               }
                             }
                           }

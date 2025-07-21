@@ -3,14 +3,6 @@
     {
       "id": "pinecone:private/uninstall",
       "required": true
-    },
-    {
-      "id": "#bs.hitbox:unload",
-      "required": false
-    },
-    {
-      "id": "#bs.raycast:unload",
-      "required": false
     }
   ]
 }

@@ -33,7 +33,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -46,7 +46,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,1.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -57,7 +57,7 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
@@ -73,7 +73,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -82,7 +82,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -95,7 +95,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -108,7 +108,7 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "true"
+                                "south": "true"
                               }
                             }
                           }
@@ -127,7 +127,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,1.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -136,7 +136,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -149,7 +149,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -160,7 +160,7 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
@@ -176,7 +176,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -185,7 +185,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -198,7 +198,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -213,7 +213,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "up": "true"
+                            "north": "true"
                           }
                         }
                       }
@@ -235,7 +235,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -244,7 +244,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -257,7 +257,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -268,67 +268,13 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
                             }
                           ]
                         },
-                        {
-                          "type": "alternatives",
-                          "children": [
-                            {
-                              "type": "item",
-                              "name": "egg",
-                              "functions": [
-                                {
-                                  "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
-                                }
-                              ],
-                              "conditions": [
-                                {
-                                  "condition": "location_check",
-                                  "predicate": {
-                                    "block": {
-                                      "state": {
-                                        "south": "true"
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "item",
-                              "name": "egg",
-                              "functions": [
-                                {
-                                  "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[15.0d,0.0d,1.0d,16.0d,16.0d,16.0d]]}"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "true"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
                         {
                           "type": "alternatives",
                           "children": [
@@ -347,7 +293,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -360,7 +306,61 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "true"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "alternatives",
+                          "children": [
+                            {
+                              "type": "item",
+                              "name": "egg",
+                              "functions": [
+                                {
+                                  "function": "set_custom_data",
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                }
+                              ],
+                              "conditions": [
+                                {
+                                  "condition": "location_check",
+                                  "predicate": {
+                                    "block": {
+                                      "state": {
+                                        "west": "true"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "item",
+                              "name": "egg",
+                              "functions": [
+                                {
+                                  "function": "set_custom_data",
+                                  "tag": "{\"interaction_shape\":[[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -371,7 +371,7 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
@@ -387,7 +387,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[15.0d,0.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -396,7 +396,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -460,7 +460,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -473,7 +473,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -484,7 +484,7 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
@@ -500,7 +500,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -509,7 +509,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -522,7 +522,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -535,7 +535,7 @@
                           "predicate": {
                             "block": {
                               "state": {
-                                "north": "true"
+                                "south": "true"
                               }
                             }
                           }
@@ -554,7 +554,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -563,7 +563,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -576,7 +576,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,15.0d,1.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -587,7 +587,7 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
@@ -603,7 +603,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -612,7 +612,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -625,7 +625,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d]]}"
                                 }
                               ]
                             }
@@ -640,7 +640,7 @@
                       "predicate": {
                         "block": {
                           "state": {
-                            "up": "true"
+                            "north": "true"
                           }
                         }
                       }
@@ -662,7 +662,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -671,7 +671,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -684,7 +684,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,1.0d,1.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d],[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -695,67 +695,13 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
                             }
                           ]
                         },
-                        {
-                          "type": "alternatives",
-                          "children": [
-                            {
-                              "type": "item",
-                              "name": "egg",
-                              "functions": [
-                                {
-                                  "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d],[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d]]}"
-                                }
-                              ],
-                              "conditions": [
-                                {
-                                  "condition": "location_check",
-                                  "predicate": {
-                                    "block": {
-                                      "state": {
-                                        "south": "true"
-                                      }
-                                    }
-                                  }
-                                }
-                              ]
-                            },
-                            {
-                              "type": "item",
-                              "name": "egg",
-                              "functions": [
-                                {
-                                  "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,16.0d,16.0d,1.0d]]}"
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ],
-                      "conditions": [
-                        {
-                          "condition": "location_check",
-                          "predicate": {
-                            "block": {
-                              "state": {
-                                "north": "true"
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "alternatives",
-                      "children": [
                         {
                           "type": "alternatives",
                           "children": [
@@ -774,7 +720,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
@@ -787,7 +733,61 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d]]}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "conditions": [
+                        {
+                          "condition": "location_check",
+                          "predicate": {
+                            "block": {
+                              "state": {
+                                "south": "true"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "alternatives",
+                      "children": [
+                        {
+                          "type": "alternatives",
+                          "children": [
+                            {
+                              "type": "item",
+                              "name": "egg",
+                              "functions": [
+                                {
+                                  "function": "set_custom_data",
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d],[1.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
+                                }
+                              ],
+                              "conditions": [
+                                {
+                                  "condition": "location_check",
+                                  "predicate": {
+                                    "block": {
+                                      "state": {
+                                        "west": "true"
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "item",
+                              "name": "egg",
+                              "functions": [
+                                {
+                                  "function": "set_custom_data",
+                                  "tag": "{\"interaction_shape\":[[0.0d,15.0d,0.0d,16.0d,16.0d,16.0d]]}"
                                 }
                               ]
                             }
@@ -798,7 +798,7 @@
                               "predicate": {
                                 "block": {
                                   "state": {
-                                    "west": "true"
+                                    "up": "true"
                                   }
                                 }
                               }
@@ -814,7 +814,7 @@
                               "functions": [
                                 {
                                   "function": "set_custom_data",
-                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,15.0d,16.0d,16.0d,16.0d]]}"
+                                  "tag": "{\"interaction_shape\":[[0.0d,0.0d,0.0d,1.0d,16.0d,16.0d]]}"
                                 }
                               ],
                               "conditions": [
@@ -823,7 +823,7 @@
                                   "predicate": {
                                     "block": {
                                       "state": {
-                                        "south": "true"
+                                        "west": "true"
                                       }
                                     }
                                   }
